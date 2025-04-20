@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a class="active" href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title">Sindicate</p>
+                    <p class="subtitle" style="padding-top: 50px;">Date generale</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 26px;">Sindicatele (신디케이트, Sindikeiteu) sunt un tip de organizații din Oraș.</p>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Descriere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/The_Backstreets.png" width="320px" height="200px">
+                        <p style="text-align: center;">Mahalalele observate în recepția Șobolanilor</p>
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Fiind alternativele ilegale ale Săgeților, sindicatele sunt adesea formate din bandiți și mafioți care se ocupă cu diverse activități dubioase, adesea legate de crima organizată, având un scop comun. Ele încearcă să își construiască o reputație în Mahalale, care sunt dominate de piețe negre, contrabandă, trafic de orice fel și asasinate la comandă, printre altele. Deși pot îndeplini aceleași tipuri de sarcini pentru care sunt angajate Săgețiile, este mult mai riscant să ai încredere într-un sindicat decât într-un Birou sau o Asociație. Sindicatele sunt formate de locuitori din întregul Oraș și variază ca mărime, influență, istorie și obiective.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Deși, în general, sindicatele sunt privite ca organizații criminale, nu toate sunt entități negative, unele alegând să nu accepte responsabilitățile și restricțiile impuse unei Săgeți care lucrează pentru un Birou sau o Asociație. Unele sindicate există chiar pentru a vâna și elimina alte Sindicate, operând mai degrabă ca Birouri neoficiale sau asemănându-se cu justițiarii. Cel mai sigur mod prin care un Sindicat câștigă putere este prin raiduri și anihilarea Birourilor de Săgeți. Cu cât un Birou este mai mare și mai experimentat, cu atât mai mare este notorietatea câștigată de Sindicatul care îl distruge.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Chiar și Aripile angajează uneori Sindicate pentru a rezolva afaceri pe care nu le pot desfășura oficial. Sindicatele sunt organizate într-un sistem ierarhic, în care liderii puternici dictează regulile în Mahalale. Cei care domină toate sindicatele sunt cunoscuți drept Cele Cinci Degete, fiind clasați ca „Stele ale Orașului”.</p>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Sindicate cunoscute</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Cele Cinci Degete</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Degetul Mare (The Thumb)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Arătătorul (The Index)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Mijlociul (The Middle)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Inelarul (The Ring)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Degetul Mic (The Pinky)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Sindicate prezente în Limbus Company</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Banda Tingtang (Tingtang Gang)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Gașca Tieqiu (Tieqiu Crew)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Los Mariachis
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Iurodivîi (Yurodiviye)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Pirații Twinhook (Twinhook Pirates)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Descendența Tăișului (Blade Lineage)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Clanul Kurokumo (Kurokumo Clan)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Iepurii Morți (Dead Rabbits)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

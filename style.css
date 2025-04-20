@@ -1,0 +1,440 @@
+/*Introduc un font nou*/
+@font-face {
+  font-family: 'Bebas-kai';
+  src: url(fonts/BebasKai.woff2);
+}
+
+/*Declar niște variabile cu culorile de bază ale site-ului*/
+:root{
+  --nav-clr: rgb(29, 27, 26);
+  --base-clr: rgb(44, 42, 39);
+  --text-clr: #FFFFFF;
+  --hover-clr: rgba(64, 62, 58, 0.5);
+  --accent-clr: #FFEF23;
+  --second-text-clr: #e12120;
+}
+
+/*Sterg orice padding existent + scrollbar subțire pe browsere chromium*/
+*{
+  scrollbar-width: thin;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Setez font-urile și înălțimea rândurilor ptr site*/
+html{
+  font-family: 'Bebas-kai', 'Segoe UI', Verdana, Geneva;
+  line-height: 1.5rem;
+}
+
+/*Setez dimensiunile minime de funcționare ale site-ului și culorile ptr fundal și text*/
+body{
+  min-height: 100vh;
+  min-width: 100dvh;
+  background-image: url("Imagini/Restul site-ului/MISC/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text-clr);
+}
+
+/*Bara de navigare*/
+nav{
+  height: 45px;
+  background-color: var(--nav-clr);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.25);
+}
+nav a{
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-clr);
+}
+nav a:hover{
+  background-color: var(--hover-clr);
+}
+nav svg{
+  fill: var(--text-clr);
+}
+
+/*Partea dreaptă a bării de navigare*/
+.right-nav {
+  padding-left: 75.35%;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 300px;
+	z-index: 9;
+}
+.right-nav {
+	justify-content: flex-end;
+}
+
+/*Butoanele ptr link-urile ptr SNS*/
+.socials {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+  height: 100%;
+	align-items: center;
+	color: #fff;
+}
+.socials a:hover{
+  border-radius: 0;
+  max-height: 21px;
+}
+
+/*Sidebar-ul propriu-zis*/
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.links-container{
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 5px;
+  height: 98.65%;
+  left: -100%;
+  z-index: 10;
+  width: 250px;
+  padding: 0px 1em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 0.75em;
+  background: linear-gradient(rgba(29, 27, 26,0.8),rgba(29, 27, 26,0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.25s ease-in-out;
+}
+
+/*Sidebar-ul este initial invizibil*/
+#sidebar-active{
+  display: none;
+}
+
+/*Butonul de închidere al sidebar-ului este initial invizibil*/
+.close-sidebar-button{
+  display: none;
+}
+
+/*Afișarea sidebar-ului*/
+#sidebar-active:checked ~ .links-container{
+  left: 5px;
+}
+#sidebar-active:checked ~ #overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+
+/*Elimin stilul listelor*/
+nav ul{
+  list-style: none;
+}
+
+nav .menu >li:first-child{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+nav .submenu >li:first-child{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+/*Setez culoarea ptr cand un buton este activat*/
+nav ul li a.active{
+  color: var(--accent-clr);
+}
+
+/*Poziționarea logo-ului din sidebar*/
+nav .logo-side-nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 1.75em;
+  scale: 125%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/*Poziționarea butoanelor din sidebar și dropdown-uri*/
+nav a, nav .dropdown{
+  border-radius: .5em;
+  padding: .75em;
+  text-decoration: none;
+  color: var(--text-clr);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+/*Afișaj dropdown*/
+.dropdown{
+  width: 15vw;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/*Efect atunci când mouse-ul se află pe butoanele*/
+nav a:hover, nav .dropdown:hover{
+  background-color: var(--hover-clr);
+}
+
+/*Animație deschidere dropdown (dropdown-ul este invizibil inițial)*/
+nav .submenu{
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-left: 15px;
+  transition: 250ms ease-in-out;
+  >div{
+      overflow: hidden;
+  }
+}
+
+/*Afișare dropdown*/
+nav .submenu.show{
+  grid-template-rows: 1fr;
+}
+
+/*Poziționare butoanelor de deschidere și închidere ptr sidebar*/
+.open-sidebar-button, .close-sidebar-button{
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+/*Ajustări suplimentare buton închidere sidebar*/
+.close-sidebar-button{
+  margin-left: 216px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Ajustări suplimentare buton deschidere sidebar când mouse-ul se află pe el*/
+.open-sidebar-button:hover{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--hover-clr);
+  max-height: 5px;
+  cursor: pointer;
+}
+
+/*Ajustări suplimentare buton închidere sidebar când mouse-ul se află pe el*/
+.close-sidebar-button:hover{
+  border-radius: .5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--hover-clr);
+  cursor: pointer;
+}
+
+/*Animație deschidere și închidere dropdown*/
+.dropdown svg{
+  transition: 200ms;
+}
+
+/*Animație buton sidebar*/
+.open-sidebar-button svg, .close-sidebar-button svg{
+  transition: 200ms;
+}
+.rotate svg{
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+
+/*Padding în interiorul propriu-zis al site-ului*/
+main{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*Padding ptr text & poziționare hiperlink secțiune pagină*/
+.info{
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  scroll-margin-top: 70px;
+}
+
+/*poziționare hiperlink secțiune pagină*/
+p{
+  scroll-margin-top: 40px;
+}
+
+/*aspect și poziționare titlu*/
+.title{
+  color: #FFEF23;
+  font-size: 66px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/*aspect și poziționare subtitlu*/
+.subtitle{
+  color: #FFEF23;
+  font-size: 40px;
+  text-align: left;
+}
+
+/*aspect și poziționare text cu imagini*/
+.imgtext{
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: left;
+  line-height: 26px;
+}
+
+/*poziționare și aspect imagini din articole*/
+#imag1 {
+  float: right;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(133, 10, 7, 0.65);
+  background-color: #212121;
+}
+#imag1 img {
+  display: block;
+  padding: 0;
+}
+.info #imag1 {
+  clear: both;
+}
+
+/*Poziționarea logo-ului pe pagina principală*/
+.logo{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/*aspect link-uri - paragraf*/
+.info p a:visited, .info p a:link, .info p a:active{
+  color:#ffbd23;
+  text-decoration: none;
+}
+.info p a:hover{
+  text-decoration: underline;
+}
+
+/*aspect link-uri - tabel*/
+table a:visited,table a:link,table a:active{
+  color:#ffbd23;
+  text-decoration: none;
+}
+table a:hover{
+  text-decoration: underline;
+}
+
+/*aspect link-uri - lista*/
+.info ul li a:visited, .info ul li a:link, .info ul li a:active, .lore-buttons .button-grow a:visited, 
+.lore-buttons .button-grow a:link, .lore-buttons .button-grow a:active{
+  color:#ffbd23;
+  text-decoration: none;
+}
+.info ul li a:hover{
+  text-decoration: underline;
+}
+
+/*aspect marcaj spoiler*/
+details summary:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details > summary:first-of-type {
+  list-style-type: none;
+}
+
+/*poziționare video*/
+.videos{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/*aspect tabel - personaje*/
+#personaje, #personaje td, #personaje th{
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 4px var(--accent-clr);
+  font-size: 20px;
+  text-align: center;
+}
+#personaje td, #personaje th{
+  padding: 6px;
+}
+#personaje td img{
+  width: 100px;
+  height: 100px;
+}
+
+.cuprins, .cuprins th{
+  margin-top: 20px;
+  padding: 0;
+  border: solid 3px #FFEF23;
+}
+.cuprins tr td{
+  padding-left: 6px;
+}
+
+.lore-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 15px;
+  padding: 15px;
+}
+
+.lore-buttons button{
+  background: linear-gradient(rgba(34, 32, 30, 0.5),rgba(53, 49, 48, 0.4));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--accent-clr);
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button-grow{
+  transition: all 0.3s ease-in-out;
+}
+.button-grow:hover{
+  transform: scale(1.1);
+}
+
+.button-grow a{
+  height: 260px;
+  width: 160px;
+}

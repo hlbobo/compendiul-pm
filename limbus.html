@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown rotate">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu show">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title">Limbus Company</p>
+                    <p class="subtitle" style="padding-top: 50px;">Date generale</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr); width: 81%;">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/COVERS/Limbus.jpg" width="250px" height="370px">
+                    </div>
+                    <p class="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;"><a href="https://store.steampowered.com/app/1973530/Limbus_Company/">Limbus Company</a> este un joc video indie de strategie gacha pentru Microsoft Windows și dispozitive mobile cu iOS sau Android, dezvoltat și publicat de studioul sud-coreean <a href="pm.html">Project Moon</a>. A fost lansat la nivel mondial pe 26 februarie 2023. Jocul se desfășoară în aceeași lume distopică, hiper-capitalistă, cunoscută doar sub numele de <a href="orasul.html">Orașul</a>, unde se petrec și evenimentele celorlalte opere ale studioului, inclusiv <a href="lobcorp.html">Lobotomy Corporation</a>, <a href="lor.html">Library of Ruina</a> și diversele opere literare precum <a href="wonderlab.html">Wonderlab</a>, <a href="leviathan.html">Leviathan</a> și <a href="distortdet.html">Distortion Detective</a>, însă acțiunea are loc la un moment oarecare după evenimentele tuturor acelor povești.</p>
+                    <p class="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Jocul include elemente gacha, care permit cheltuirea banilor reali pentru a achiziționa Lunacy (moneda din joc) sau "tichete" folosite pentru a obține noi Identități pentru Păcătoși sau <a href="ego.html">E.G.O.-uri</a> aferente, în afara unităților de bază oferite jucătorului. Directorul Kim Ji-hoon a afirmat în cadrul unei sesiuni de întrebări și răspunsuri că acest lucru era necesar atât pentru a finanța, cât și pentru a explora crearea de noi jocuri <a href="pm.html">Project Moon</a>, cum ar fi un „Action RPG la persoana a treia”, încă fără nume, care se desfășoară în Oraș, iar un joc de tip live service ar extinde baza de fani și i-ar menține distrați între lansările complete.</p>                
+                </div>
+                <div class="info">
+                    <p class="subtitle">Gameplay</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">La intrarea într-o etapă de luptă, jucătorul poate alege până la 5, 6 sau 7 din cei 12 Păcătoși (excluzându-l pe Dante) pentru a lupta. Jucătorul nu poate folosi identități multiple ale aceluiași Păcătos și, la fel, nu poate atașa mai multe <a href="ego.html">E.G.O.-uri</a> de același nivel de putere pentru un Păcătos.</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">În luptele normale, jucătorul poate trage cursorul peste cercurile care reprezintă atacul fiecărui Păcătos, formând un lanț de atacuri nedirectabile împotriva inamicilor. În luptele împotriva șefilor sau anomaliilor, jucătorii vor trebui, în schimb, să aleagă care atac al unui Păcătos corespunde cu un anumit inamic sau cu o anumită parte a corpului inamicului pe care doresc să o atace.</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Jocul decide care atacuri ale uneia dintre părți sunt de succes printr-o serie de aruncări de monede, unde Punctele de Rațiune (SP) determină norocul unui personaj de a obține capul monedei. Un cap de monedă va adăuga o modificare numerică la puterea personajului (de obicei o creștere; o scădere în cazul anumitor Identități și <a href="ego.html">E.G.O.-uri</a> în stare de coroziune), în timp ce o pajură va lăsa numărul neschimbat.</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Jucătorul poate alege să atace folosind <a href="ego.html">E.G.O-ul</a> specific unui Păcătos, în loc de atacul său normal. Atacurile cu <a href="ego.html">E.G.O.</a> sunt adesea semnificativ mai puternice decât abilitățile normale de atac ale unui Păcătos, însă acest lucru necesită consumul de SP al Păcătosului și resursele de „Păcat” acumulate. Dacă punctele de rațiune ale unui Păcătos sunt suficient de scăzute, acesta poate lansa pe cont propriu un <a href="ego.html">E.G.O.</a> „corodat”, care este (deobicei) mai puternic, dar nu poate fi controlat de jucător. Jucătorul poate totuși controla un E.G.O „corodat” prin supraîncărcarea unui E.G.O. obișnuit, ceea ce costă mai multe resurse de „Păcat”.</p>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Poveste</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Informații de fundal:</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 24px; text-align: left; line-height: 26px;">Urmând jocurile anterioare, Limbus Company se desfășoară într-o lume distopică cunoscută sub numele de <a href="orasul.html">Orașul</a>, alcătuită din douăzeci și șase de districte, fiecare având progrese tehnologice și culturale unice. Cele 26 de Aripi, mega-corporatii denumite după literele alfabetului care guvernează districtele respective, sunt conduse de <a href="capul.html">Cap</a>. Fiecare district este împărțit fizic în două părți: un <a href="cuiburi.html">Cuiburi</a>, reședințe urbane susținute de Corporații, și <a href="mahalale.html">Mahalale (Backstreets)</a>, zonele pline de sărăcie, dominate de sindicate criminale și aflate în afara protecției Corporațiilor.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 24px; text-align: left; line-height: 26px;">În întregul Oraș, există numeroase <a href="birouri.html">Birouri</a> conduse de <a href="sageti.html">Săgeți</a>, mercenari reglementați de guvern, care vor face orice lucru le este cerut câtă vreme sunt plătiți corespunzător. Fiecărei Săgeți îi este atribuită un grad bazat pe abilitățile și experiența sa de către <a href="asoc-hana.html">Asociația Hana</a>.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 24px; text-align: left; line-height: 26px;">Ocazional, oamenii copleșiți de emoții intense se transformă în entități monstruoase numite <a href="distorsiuni.html">Distorsiuni</a> sau, în cazul în care aceștia nu reușesc să se distorsioneze, devin <a href="peccatula.html">Peccatula</a>. Invers, cei care reușesc să depășească aceste emoții pot manifesta <a href="ego.html">E.G.O.</a>, unelte sau echipamente care le amplifică considerabil capabilitățile de luptă. Colectiv denumit fenomenul Distorsiunilor, acest concept are o importanță majoră în trama jocului.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 24px; text-align: left; line-height: 26px;">Povestea jocului este împărțită în capitole, sau „Canto-uri”, inspirate din "Infernul" din "Comedia Divină" a lui Dante și cele 9 cercuri ale Iadului, și în capitole intermediare denumite "Intervallo-uri". Fiecare Canto este centrat pe un personaj, trama explorând trecutul unuia dintre Păcătoși. În prezent, sunt disponibile integral 7 Canto-uri și 7 Intervallo-uri.</p>
+
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Povestea principală:</p>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Prolog: Selva Oscura</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Jocul începe prin salvare unei persoane amnezice cu cap în formă de ceas de către Vergilius, mai bine cunoscut drept "Scrutarea Roșie", care este informată de către acesta că se numește Dante și că este directorul executiv al Departamentului de Autobuz Limbus Company (LCB). Sub conducerea sa, un grup de 13 angajați, Dante inclusiv, numiți Păcătoși, se află în căutare Crengilor de Aur, surse majore de putere răspândite prin Oraș în ruinele ramurilor Lobotomy Corporation. În timpul călătoriei prin Oraș pe autobuzul Mephistofeles, Dante încearcă să-și redescopere identitatea, în timp ce Păcătoșii sunt nevoiți să se confrunte cu propriul lor trecut.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto I: The Outcast</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Primul popas al Păcătoșilor este Districtul 4, în care trebuie să exploreze ruinele unei ramure Lobotomy Corp. Odată înăuntru, Gregor începe să rezoneze cu Creanga de Aur iar Păcătoșii sunt forțați să retrăiască trecutul său și stigmata care ia naștere din poziția sa de ofițer în timpul "Războiului Fumului". Creanga de Aur iasă în final la iveală, însă este furată de către un grup rival condus de presupusa mamă a lui Gregor, Hermann, constituit, de asemenea, din multiple vechi cunoștințe ale Păcătoșilor.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto II: The Unloving</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii ajung în Districtul 10, unde o Creangă de Aur este oferită drept premiu într-un cazinou administrat de Corporația J. Păcătoșii se luptă cu Sindicatele locale pentru a ajunge la etajul cazinoului, unde Rodion se reunește, în mod neașteptat, cu vechiul ei tovarăș Sonya, co-fondatorul Iurodivîi-ului (Yurodiviye), un sindicat care plănuiește să eradicheze opresiunea și exploatarea în Oraș. Creanga de Aur rezonează cu Rodion, dezvăluindu-i trecutul ei ca plebea în Mahalale, încercând, în zadar, să cauzeze o schimbare a sistemului prin uciderea unui perceptor local. Această încercare rezultând însă în moartea întregului ei cartier drept revanșa a Degetului din Mijloc, un sindicat major. Păcătoșii părăsesc Districtul 10 cu prima lor Creangă de Aur, iar Sonya este dezvăluit a fii aliat cu Hermann.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto III: The Unconfronting</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii ajung în orașul natal al lui Sinclair, Calw, din Districtul 11 fiind întâmpinați cu faptul că acesta se află sub asediu de către un grup religios, anti-prostetice din Corporația N, cunoscut sub numele de "Nagel und Hammer". Creanga de Aur rezonează cu Sinclair, dezvăluind trecutul său alături de Kromer și Demian, doi foști colegi, precum și faptul că plasarea greșită a încrederii sale în Kromer și descoperirea ramurii abandonate a Corporației L (Lobotomy Corporation) aflată sub casă lui au dus la moartea familiei sale.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Kromer, lidera "Nagel und Hammer" în prezent, confruntă și copleșește Păcătoșii, punând mâna pe Creanga de Aur. De nicăieri, Demian își face apariția, salvându-i pe Dante și Sinclair, și ucigând-o pe Kromer. Membrii LCB-ului sunt recuperați de către echipa de recuperare a Limbus Company și sărbătoresc obținerea celei de a doua lor Creangă de Aur.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo I: Hell's Chicken</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">După ce au supraviețuit cu greu luptei cu Kromer, Limbus Company își continuă drumul către o altă parte a Districtului 11, unde li se cere să rezolve o Distorsiune care îl implică pe proprietarul unui restaurant de pui. Bărbatul, cunoscut sub numele de „Papa Bongy”, s-a transformat într-un monstru asemănător unui pui și atașează pui cruzi, dar conștienți, pe capetele mai multor persoane. Atrași de promisiunea puiului gratuit pe viață dacă rezolvă situația, Păcătoșii organizează rapid o competiție de gătit între ei, sperând să prepare un preparat cu pui care să-l liniștească pe Papa Bongy.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto IV: The Unchanging</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii intră în birourile K Corp. și se întâlnesc cu Managerul de Filială, Dongrang, un vechi coleg al lui Yi Sang din fosta Ligă a celor Nouă Literatori. Gruparea teroristă „Alianța pentru Eliberarea Tehnologică”, condusă de Dongbaek, un alt membru al Ligii, deturnează clădirea și forțează securitatea K Corp. să lupte împotriva Păcătoșilor. Dongbaek manifestă E.G.O., dar este ucisă de Dongrang, care se dezvăluie a fi trădătorul Ligii, cel care a dus la căderea acesteia.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Pe măsură ce Creanga de Aur rezonează cu Yi Sang, Păcătoșii află despre declinul și dizolvarea Ligii celor Nouă Literatori, crearea Oglinzii de către Yi Sang și Singularitatea Corporației K. Dongrang suferă o Distorsiune, dar în curând își manifestă propriul E.G.O., dorind să-l ucidă pe Yi Sang și să-și distrugă trecutul alături de vechea Ligă. Yi Sang, reușind în cele din urmă să lase trecutul în urmă, își ucide vechiul prieten. Păcătoșilor li se șterg amintirile despre Singularitatea Corporației K și recuperează cea de-a treia Creangă de Aur. Totuși, se dezvăluie că Dante este imun procesului de ștergere a memoriei, păstrând însă acest lucru un secret pentru un scop viitor.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Ultima scenă prezintă reapariția scurtă a lui Demian, care stă de vorbă cu Dante; acele capului de ceas al lui Dante avansând pentru prima oară spre miezul nopții.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo II: S.E.A</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Membrii LCB ajung în Mahalale Districtului 21, unde opresc la atelierul Molar Boatworks pentru a modifica autobuzul lor Mephistopheles, făcându-l capabil să navigheze pe Marele Lac al Districtului. Păcătoșii încearcă să se bucure de o vacanță de vară improvizată, dar sunt obligați să adune fier vechi de la crabi de gunoi uriași pentru a ajuta atelierul. Între timp, Ishmael devine din ce în ce mai furioasă pe colegii săi, susținând că aceștia nu sunt pregătiți să înfrunte marea așa cum este ea.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto V: The Evil Defining</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii navighează pe teritoriul Corporației U, o mare uriașă cunoscută ca Marele Lac, năpădit de Balene, Sirene și alți monștrii. Ishmael este concentrată să o găsească pe fosta sa capitană de pe bordul Pequod-ului, Ahab, care și-a condus echipajul spre moarte din cauza obseiei sale de a vână Balena Palidă; pentru a își lua revanșa. Membrii LCB sunt înghițiți de către Balena Palidă, unde, ca printr-o minune, Ahab și restul echipajului au reușit să supraviețuiască.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Ahab și Păcătoșii realizează un pact pentru a ataca inima Balenei Palide, unde se află Creanga de Aur. Trecutul lui Ishmael ca marinar pe Pequod este dezvăluit, iar, în final, Ahab își sacrifică echipajul și manifestă E.G.O., dar este învinsă de Păcătoși. Ishmael lovește pentru o ultimă dată inima Balenei Palide, eliberându-se atât pe ea, cât și pe Ahab de obsesia lor, găsindu-și un nou scop dincolo de răzbunare.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Scenă post-generic prezintă faptul că Ahab a supreviețuit colapsului balenei, distursă psihic, și că a fost recrutată de către Hermann. </p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo III-1: Miracle in District 20</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Don Quixote îi convinge pe Dante și Heathcliff să intre printr-o ușă din spatele lui Mephistopheles care duce la o fabrică de jucării, sperând să găsească atât niște haine sofisticate pentru Heathcliff, cât și legendara Săgeată „Sacul Roșu” pentru Don. Totuși, Dante descoperă curând că fabrica este situată undeva în Periferii, în afara Orașului, fiind operată exclusiv de gnomi și producând jucării din cadavre umane pentru alți monștrii. Când Don și Heathcliff sunt doborâți și capturați, restul Păcătoșilor se grăbesc să-i salveze și să se întoarcă la autobuz înainte ca portalul să se închidă, dezvăluind totodată că Săgeata „Sacul Roșu” s-ar putea să nu fi existat niciodată.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo III-2: Yield My Flesh To Claim Their Bones</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii ajung în cele din urmă în Districtul 20, dar aleg să treacă prin Mahalale, unde, dintr-o dată, se trezesc în mijlocul unui război între două sindicate: Descendența Tăișului (Blade Lineage) și Clanul Kurokumo. După ce salvează o luptătoare rănită din Descendența Tăișului pe nume Aeng-du, compania le dă o misiune Păcătoșilor să investigheze o Distorsiune în zonă. Aeng-du și Păcătoșii își croiesc drum către vârful unui zgârie-nori, unde descoperă că sursa Distorsiunii este mentorul lui Aeng-du, Bamboo-hatted Kim.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto VI: The Heartbreaking</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Heathcliff conduce Păcătoșii în conacul Wuthering Heights, parțial din cauza unor rapoarte despre o Creangă de Aur și parțial ca răspuns la invitația lui Cathy, doar pentru a descoperi că participă la înmormântarea acesteia. Păcătoșii sunt rapid atrași într-un conflict între Heathcliff, gașca Iepurilor Morți angajată de Hindley Earnshaw și majordomii conacului. Aventurându-se în subsolul conacului, Păcătoșii descoperă corpul lui Cathy folosit într-un experiment de foști membrii ai Inelarului, conduși de unul dintre foștii colegi ai lui Yi Sang, care lucra cu Hermann.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Liderul Iepurilor Morți își dezvăluie adevărata identitate ca fiind Regele Arinilor, o variantă alternativă a lui Heathcliff. După ce a văzut suferința nerezolvată dintre Heathcliff și Cathy din fiecare Lume a Oglinzilor, Regele Arinilor dorește să omoare toate variantele lui Heathcliff care au existat vreodată. Heathcliff din LCB se distorsionează, copleșit de vinovăție și furie, dar este salvat de către Dante și ceilalți Păcătoși ulterior. Ajutați de Vergilius, care rămâne în subsol pentru a lupta împotriva Vânătorii Sălbatice a Regelui Arinilor (o hoardă aproape nesfârșită de nemorți), Păcătoșii ajung pe acoperiș, unde înfrâng atât Regele Arinilor, cât și o versiune a lui Catherine care a cedat unei nebunii similare. Spiritul lui Cathy se manifestă prin puterile lui Dante și are o ultimă conversație emoționantă cu Heathcliff, după care se șterge din toate lumile alternative pentru a șterge suferința tuturor Heathcliff-ilor, lăsându-i pe Heathcliff și Dante singurii din orice lume care își vor aminti că ea a existat. Nelly, care a devenit trădătoare pentru facțiunea lui Hermann, revendică Creanga de Aur pentru ea, lăsându-i pe Păcătoși cu mâinile goale.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo IV-1: Timekilling Time</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">După haosul de la Wuthering Heights, Păcătoșii rămân campați în Cuibul Corporației T, unde sunt notificați de perceptorii corporației de o imensă „Taxă de Timp” acumulată. În timp ce restul Păcătoșilor se află în închisoare, Dante, Hong Lu, Ryōshū și Rodion au sarcina de a urmări Distorsiunea cunoscută sub numele de „Spintecătorul de Timp” – notoriu pentru că poate „ucide” timpul victimelor sale – pentru a anula datoria. În timpul investigației, întâlnesc filiala Districtului 20 a Iurodiivîiului și, ulterior, se confruntă cu Spintecătorul de Timp în vârful unui turn de ceas defect.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Intervallo IV-2: Murder on the Warp Express</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii urcă într-un tren WARP către destinația lor, Corporația P, în timp ce elimină o potențială amenințare la bordul trenului. Faust îi dezvăluie lui Dante faptul că accesul ei la Gesellschaft, sursa ei de cunoștințe din alte versiuni ale sale, a fost tăiat. Amenințarea este în cele din urmă dezvăluită ca fiind un  Bloodfiend (o specie asemănătoare vampirilor) de a Șasea Viță pe nume Cassetti; cu ambele părți epuizate de luptă, Faust sugerează o negociere pașnică când Don Quixote intervine brusc, doar pentru a fi mușcată de Cassetti. Don Quixote este dezvăluită a fii un Bloodfiend de a Doua Viță, mult mai bătrân și puternic, care îl ucide imediat pe Cassetti pentru „păcatul necredinței filiale” înainte de a cădea în inconștiență. Accesul lui Faust la Gesellschaft este în cele din urmă restabilit, iar Păcătoșii se întorc la trenul WARP prin ușa din spate a lui Mephistopheles.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto VII: The Dream Ending</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Păcătoșii ajung în Corporația P pentru a investiga un fenomen numit „La Manchaland”, un parc de distracții care apare intermitent și care a răpit nenumărați cetățeni din Districtul 16, pentru a hranii Bloodfiends-i din interioruul său. Aceștia întâlnesc mai multe grupuri de Săgeți, inclusiv pe sora lui Hong Lu, Jia Xichun, și discută cu Moses și Ezra din *Distortion Detective*, care acum lucrează pentru Limbus Company.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Pe măsură ce La Manchaland apare, Păcătoșii se aventurează rapid prin parc spre centrul acestuia. Sansón, un Bloodfiend enigmatic, îi forțează pe Păcătoși să rejoace numeroasele aventuri din trecut ale lui Don Quixote, culminând cu dezvăluirea identității lui Don Quixote către Păcătoși, drept un Bloodfiend pe nume Sancho. La început, aceasta se întoarce împotriva Păcătoșilor, dorind să-și protejeze stăpânul, Don Quixote, primul Bloodfiend al familiei, dar este convinsă să rămână fidelă idealismului personajului său amnezic și al originalului Don Quixote, reunindu-se LCB-ului sub aliasul său. Ea ajută la eutanasierarea adevăratului Don Quixote, străpuns și slăbit de Creanga de Aur, făcând ca parcul să se dizolve.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Sansón se dovedește a fii unul dintre aliații lui Demian. După o altă scurtă interacțiune între Dante și Demian, ceasul lui Dante avansează spre miezul nopții pentru a doua oară.</p>
+                    </details>
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 20px; font-size: 32px; text-align: left; color: var(--second-text-clr);">Canto VII.5: LCB Regular Check-up</summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Oasele lui Gregor scot un sunet ciudat atunci când se întinde, ceea ce îl face să ceară o vacanță. Această cerere inocentă îi face pe Faust și Vergilius să anunțe că Păcătoșii trebuie să treacă printr-un „control de rutină” la sediul Limbus Company, pentru a evalua cât de puternici au devenit de când s-au alăturat companiei. Ajungând la etajul departamentului de extracție (LCE) printr-un dispozitiv special de teleportare, Păcătoșii îl întâlnesc pe Hohenheim, cercetătorul șef, dur și detașat, al LCE (tehnic și al întregii companii), și pe asistenții săi, Alyssa și Marton.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Hohenheim începe imediat controlul, închizând Păcătoșii într-o cameră departe de Dante, pentru a testa reacția lor în scenarii de urgență, înainte ca Dante să fie lăsat în sfârșit să îi ghideze. Se efectuează mai multe teste, dar înainte ca testele importante să înceapă, Hohenheim cere un asistent, iar Heathcliff este ales dintre Păcătoși. Aceste „teste” implică perechi de doi sau trei de Păcătoși care se confruntă cu Peccatulum. În timpul testelor, se dezvăluie că „contractul” pe care Păcătoșii l-au făcut cu Dante a suprimat nivelul acestora la „mediocritate”, dar cu „potențialitatea” de a deveni mai buni sau mai răi pe măsură ce mai multe Crengi de Aur sunt revendicate.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">După porțiunea lui Yi Sang și Don Quixote, atât din pricina unui comentariu inocent al lui Yi Sang legat de ce s-ar întâmpla dacă Don Quixote și-ar da pantofii jos acum că își amintește trecutul, cât și lipsa de date din partea lui Faust, îl face pe Hohenheim să o incite pe Don Quixote să îi dea jos Rocinante. Imediat după ce face acest lucru, înnebunește brusc, înfrângând fără efort Păcătoșii care încearcă să o oprească. Vergilius este nevoit să intervină pentru a o opri. După ce Rocinante sunt puși înapoi pe picioarele ei, Păcătoșii află că, din cauza naturii de Bloodfiend a lui Don Quixote, ea este forțată să poarte setea colectivă a întregii sale Familii dacă Rocinante sunt vreodată dați jos, lucru care o dezamăgește pe Don Quixote, care nu poate fi „ea însăși”.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">După suprimarea lui Don Quixote, rezultatele finale pentru Păcătoși sunt dezvăluite, cu Don Quixote fiind cea mai puternică datorită naturii sale de Bloodfiend, iar Yi Sang fiind cel mai slab. Gregor nici măcar nu este inclus în lista de ranguri, dar Hohenheim menționează că acest lucru se datorează faptului că este o „excepție”. Nu oferă mai multe detalii, iar ceilalți Păcătoși ignoră plângerile lui Gregor că a fost lăsat deoparte.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Singura parte rămasă a controlului de rutină este ca Păcătoșii să se ocupe de o Distorsiune, așa că Hohenheim se oferă voluntar să joace rolul respectivei Distorsiuni folosind un Monolit. Pe măsură ce Păcătoșii călătoresc prin adâncurile (cenzurate) ale egoului lui Hohenheim, află că el a fost un fost angajat al Lobotomy Corp. care și-a părăsit fără inimă colegii damnându-i la moarte în clădirea care se prăbușea, sărind în capsula de evacuare a Companiei. Lupta cu el dezvăluie însă adevărul, deoarece fostul său asistent Johann (care are asemănări cu Heathcliff) l-a forțat să intre în respectiva capsulă de evacuare, acesta se simte vinovat ca unic supraviețuitor și își dorește moartea. După revertirea lui Hohenheim (pe care acesta o numește un eșec din cauza credinței că va rămâne o Distorsiune), controlul de rutină este finalizat, iar LCE îi trimite pe Păcătoși înapoi la autobuz, spunându-le că nu se vor mai întâlni vreodată. În timp ce pleacă, Dante își dă seama că nu au cercetat totuși ce cauza zgomotul ciudat al oaselor lui Gregor.</p>
+                    </details>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Personaje</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Personaje principale:</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 24px; text-align: left; line-height: 26px;">Grupul principal al jocului este format din 13 "Păcătoși", alături de ghidul lor, Vergilius, și șoferul lor, Charon, aduși împreună datorită unui anumit contract cu compania Limbus. Dante este considerat unul dintre Păcătoși, deși nu participă activ în lupte.</p>
+                    <table id="personaje" style="scroll-margin-top: 240px; margin-right: 45px;">
+                        <tr>
+                            <th>Nr. Păcătos</th>
+                            <th>Nume</th>
+                            <th>Portret</th>
+                            <th>Actor vocal</th>
+                            <th>Referință literară</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Yi Sang</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Yi_Sang_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Min Seung-woo</td>
+                            <td>Kim Hae-Gyeong (Yi Sang), poet și scriitor Coreean faimos; nuvela lui "Aripile"</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Faust</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Faust_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Park Ji-yoon</td>
+                            <td>Faust, protagonistul eponim al piesei de teatru scriă de Johann Wolfgang von Goethe</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Don Quixote</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Don_Quixote_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Kim Yea-lim</td>
+                            <td>Don Quixote, protagonistul eponim al romanului scris de Miguel de Cervantes</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ryōshū</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Ryoushuu_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Yi Sae-ah</td>
+                            <td>Yoshihide, protagonistul poveștii "Paravanul Iad" de Ryūnosuke Akutagawa</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Meursault</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Meursault_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Kwon Sung-hyuk</td>
+                            <td>Meursault, protagonistul nuvelei "Străinul" de Albert Camus</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Hong Lu</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Hong_Lu_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Kim Sin-woo</td>
+                            <td>Jin Baoyu, protagonistul romanului "Visul din Pavilionul Roșu" de Cao Xueqin</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Heathcliff</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Heathcliff_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Hong Seung-hyo</td>
+                            <td>Heathcliff, protagonistul romanului "La răscruce de vânturi" de Emily Bronte</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Ishmael</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Ishmael_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Jang Ye-na</td>
+                            <td>Protagonistul narator al romanului Moby Dick de Herman Melville</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Rodion</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Rodion_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Yoon A-young</td>
+                            <td>Rodion, protagonistul romanului "Crimă și Pedeapsă" de Fyodor Dostoevsky</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Dante</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/Danteicon.png" style="width: 87px; height: 102px;"></td>
+                            <td> - </td>
+                            <td>Dante Aligheri și poemul său narativ, "Comedia Divină"</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Emil Sinclair</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Sinclair_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Kim Da-ol</td>
+                            <td>Emil Sinclair, protagonistul romanului Demian de Hermann Hesse</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Outis</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Outis_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Kim Bo-na</td>
+                            <td>Odysseus, protagonistul epopeei Odisea de Homer</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Gregor</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/LCB_Gregor_Icon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Choi Han</td>
+                            <td>Gregor Samsa, protagonistul nuvelei "Metamorfoza" de Franz Kafka</td>
+                        </tr>
+                        <tr>
+                            <td>N/A</td>
+                            <td>Vergilius</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/VergiliusIcon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Jeong Seong-hoon </td>
+                            <td>Virgil din poemul narativ "Comedia Divină" de Dante Aligheri</td>
+                        </tr>
+                        <tr>
+                            <td>N/A</td>
+                            <td>Charon</td>
+                            <td><img src="Imagini/Restul site-ului/LIMBUS/CharonIcon.png" style="width: 87px; height: 102px;"></td>
+                            <td>Song Ha-rim</td>
+                            <td>Personajul mitologic grec cu același nume, luntrașul ce transportă sufletele pe râurile Acheron și Styx. În "Comedia Divină", Charon este cel care îi transportă pe Dante și Virgil în primul cerc al Iadului, marcând începutul călătoriei lui Dante prin Infern.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Muzică</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Piesa de generic principală pentru Limbus Company, „In Hell We Live, Lament”, este cântată de trupa japoneză indie <a href="https://projectmili.com/">Mili</a> și o include pe cântăreața KIHOW din trupa japoneză pop rock Myth & Roid. <a href="https://projectmili.com/">Mili</a> avea deja o istorie de colaborare cu <a href="pm.html">Project Moon</a>, având în vedere că a compus muzică pentru jocul anterior al acestora, <a href="lor.html">Library of Ruina</a>. Pe parcursul actualizărilor jocului, <a href="https://projectmili.com/">Mili</a> a compus piese tematice pentru mai mulți dintre Păcătoși. Acestea includ „Between Two Worlds” pentru Sinclair, „Fly My Wings” pentru Yi Sang, „Compass” pentru Ishmael, „Through Patches of Violet” pentru Heathcliff și „Hero” pentru Don Quixote.</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">La sfârșitul fiecărui Canto, fiecare dintre Păcătoși interpretează propria lor versiune a cântecului „Pass On” (Sarajinae 사라지네).</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

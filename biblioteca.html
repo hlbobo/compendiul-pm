@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a class="active" href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title">Biblioteca</p>
+                    <p class="subtitle" style="padding-top: 50px;">Introducere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/The_Library.png" width="340px" height="200px">
+                        <p style="text-align: center;">Exteriorul Bibliotecii</p>
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 26px;">Biblioteca (Hangul: 도서관, Doseogwan) a fost centrul tuturor evenimentelor majore din jocul prequel lui <a href="limbus.html">Limbus Company</a>, <a href="lor.html">Library of Ruina</a>. Ea a înlocuit filiala principală a fostei <a href="lobcorpcom.html">Corporațiii L</a>, X-394, luând forma unui turn ramificat, învăluit într-o ceață densă, devenind treptat mai vizibilă și influentă în tot <a href="orasul.html">Orașul</a> pe parcursul jocului.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 26px;">Acum se află în Periferie, în timp ce <a href="orasul.html">Orașul</a> este martor la „reînvierile” întâmplătoare ale multor oaspeți care cândva au fost învinși acolo.</p>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Prezentare generală</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Biblioteca a fost odată o Stea a Orașului (iar apoi o Impuritas Civitatis, înainte de expulzarea ei în Periferie), care și-a făcut un nume de sine stătător pe parcursul evenimentelor din <a href="lor.html">Library of Ruina</a>. Descrisă de Zena drept <a href="ego.html">E.G.O-ul</a> Angelei, Biblioteca a fost o fortăreață notabilă și puternică, bazată pe un sistem de cărți și invitații. Deși mulți oameni treceau prin ea, a funcționat ca un adăpost permanent doar pentru Angela, Roland, abnormitățile din X-394, Sephirah și bibliotecarii lor.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">În perioada sa de activitate, Biblioteca era o forță de temut. Deși unii vizitatori fugiseră (doar pentru a se întoarce din nou), toți oaspeții Bibliotecii erau în cele din urmă învinși în luptă, fiind considerați morți de cei din exterior. Oaspeții erau selectați și li se oferea accesul în Bibliotecă prin invitațiile pe care aceasta le trimitea, invitații care apăreau brusc în fața persoanelor ce nu aveau altă cale de scăpare. Destinatarii invitațiilor era în totalitate aleși de Carmen, prin relația unică pe care ea o avea cu Biblioteca și cu Lumina, fiind responsabilă astfel de majoritatea evenimentelor din joc. După ce își semnau numele pe invitație, oaspeții erau teleportați instantaneu în Bibliotecă. Înainte de Impuritas Civitatis, acceptarea invitației era singura metodă posibilă de a intra în Bibliotecă ca străin, având în vedere faptul că clădirea era învăluită într-o ceață ce împiedica pe oricine să se apropie.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Odată ce o persoană era teleportată în Bibliotecă, corpul său real era „cuantificat și copiat” în vederea transformării lui într-o carte. De fapt, nimeni nu „murea” cu adevărat în Bibliotecă. Mai degrabă, oaspeții renunțau la amintirile și cunoștiințele lor în schimbul Cărților și intrau într-o stare de odihnă permanentă. Forța oaspeților primiți de Bibliotecă creștea odată cu cea a Bibliotecii, astfel încât chiar și forțe formidabile, precum Distorsiunile și deținătorii de E.G.O, erau în cele din urmă învinși și transformați în Cărți. Finalul bun al jocului Library of Ruina marchează rezolvarea necazurilor Angelei și ale lui Roland, ducând la eliberarea și restaurarea tuturor victimelor; singurul inconvenient fiind că foștii oaspeți erau împrăștiați în întregul Oraș în locuri aleatorii și la momente diferite în timp. Unele dintre victime, cum ar fi membrii Biroului Molar, sunt prezente chiar în <a href="limbus.html">Limbus Company</a>.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">După sfârșitul jocului <a href="lor.html">Library of Ruina</a>, Biblioteca nu mai se află în locul fostei <a href="lobcorpcom.html">Corporații L</a>. În schimb, ea se găsește undeva în Periferie, ca rezultat al unui exil din <a href="orasul.html">Oraș</a> impus de Cap. În prezent, nimeni altcineva, decât cei ce locuiesc încă în Bibliotecă și de Cap, nu cunoaște locația ei. Personaje precum Dante și Don Quixote se referă pur și simplu la Bibliotecă ca fiind dispărută brusc din vechea sa locație, aflată în Cuibul Districtului 12.</p>
+                </div>
+                <div class="info">
+                    <p class="subtitle">Istorie</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Biblioteca a fost creată de Angela, ca urmare a nemulțumirii sale față de rolul pe care fusese obligată să-l joace de creatorul său în timpul activității <a href="lobcorpcom.html">Corporației L</a> și a setei sale de cunoaștere care crescuse considerabil de-a lungul celor un milion de ani de viață. Biblioteca a fost formată folosind Lumina care începu să strălucească peste <a href="orasul.html">Oraș</a> după ce Proiectul Sămânța de Lumină a început să dea roade. Oprirea răspândirii Luminii a cauzat <a href="zile-nopti.html">Nopțile Albe și Zilele Întunecate</a> și, în cele din urmă, fenomenul <a href="distorsiuni.html">Distorsiunilor</a>.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/The_Library_Inside.png" width="310px" height="170px">
+                        <p style="text-align: center;">Primul etaj al Bibliotecii</p>
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Angela a colaborat cu Roland pentru a invita oaspeți, a-i combate și a-i transforma în Cărți. Intenția ei era să descopere ceea ce ea numea „cartea perfectă” pentru a dobândi umanitate și să adune înapoi cele trei zile de Lumina împrăștiate în tot <a href="orasul.html">Orașul</a>, pentru a se elibera pe sine, pe Sephirah și abnormitățile din captivitatea lor – toate acestea neputând exista în afara Bibliotecii. Multe lucruri s-au întâmplat pe măsură ce au urmat acest plan: Lumina a fost adunată cu succes, Angela a reușit să dobândească o formă umană, iar Biblioteca a deschis în total zece etaje și a trezit nouă Sephirah, toate acestea, evoluând de la un Canard neînsemnat la o Stea a Orașului.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">La finalul <a href="lor.html">Library of Ruina</a>, Angela revine la forma sa de Inteligență Artificială, după ce a încercat să se sacrifice pentru Proiectul Sămânța de Lumină, dar a fost salvată în ultimul moment de Roland. Capul, sub Amendamentul Eticii Inteligenței Artificiale, a apărut ulterior în Bibliotecă pentru a provoca haos din cauza încălcării legii <a href="orasul.html">Orașului</a>. Angela și aliații ei au scăpat în cele din urmă cu un simplu exil; astfel, întreaga Bibliotecă a fost relocată în Periferie.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Timpul petrecut de Angela în Lumina a eliberat, de asemenea, toți foștii oaspeți din Cărțile în care erau sigilați, readucându-i efectiv la viață. Totuși, sacrificiul ei incomplet a dus la faptul că aceștia au fost împrăștiați aleatoriu în întregul <a href="orasul.html">Oraș</a>, la intervale neregulate. <a href="limbus.html">Limbus Company</a> îi prezintă, de exemplu, pe Olga, Rain și Mika, care lucrează acum pentru un nou Atelier creat în <a href="mahalale.html">Mahalalele</a> Corporației U, în timp ce Tomerry și Iori apar vii în <a href="leviathan.html">Leviathan</a>.</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

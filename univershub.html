@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="active" href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title" style="font-size: 32px; color: var(--second-text-clr);">Lasciate ogni speranza, voi ch'entrate qui.</p>
+                    <p class="title" style="font-size: 100px; color: var(--second-text-clr); line-height: 50px;">Date despre</p>
+                    <p class="title" style="font-size: 100px; color: var(--second-text-clr); line-height: 50px;">universul P.M.</p>
+                </div>
+                <div class="lore-buttons">
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="orasul.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre oraș</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="mahalale.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre mahalale</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="aripi.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre aripi</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="sindicate.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre sindicate</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="biblioteca.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre biblioteca</p>
+                            </span>
+                        </a>
+                    </button>
+                </div>
+                <div class="lore-buttons" style="padding-top: 5px;">
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="lobcorpcom.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Lobotomy Corporation (Compania)</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="lcbc.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Limbus Company (Compania)</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="abnos.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre abnormități</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="cuiburi.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre cuiburi</p>
+                            </span>
+                        </a>
+                    </button>
+                    <button class="button-grow" style="height: 260px; width: 160px;">
+                        <a href="orasul.html">
+                            <span>
+                                <img src="Imagini/logos/logo real real.png" style="margin: auto; height: 150px; width: 150px;">
+                                <p style="font-family: Bebas-Kai; font-size: 24px; padding-bottom: 20px;">Despre oraș</p>
+                            </span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

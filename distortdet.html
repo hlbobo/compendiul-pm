@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown rotate">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu show">
+                            <div>
+                                <li>
+                                    <a href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 66px; text-align: center; padding-top: 40px;">Distortion Detective</p>
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left; padding-top: 50px;">Date generale</p>
+                    <hr style="margin-top: 10px; color: #FFEF23; width: 80%;">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/COVERS/The_Distortion_Detective_Cover_2.png" width="270px" height="370px">
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;"><a href="https://www.postype.com/@projectmoon/series/491543">The Distortion Detective – În urmărirea Distorsiunii</a>, este un roman web detectiv și de mister, publicat de <a href="pm.html">Project Moon</a> pe pagina oficială Postype a companiei. Seria a fost scrisă de fondatorul companiei, Kim Ji-hoon, iar ilustrațiile au fost realizate de echipa de artiști <a href="pm.html">Project Moon</a>. Publicarea a început pe 28 februarie 2020, însă a fost întreruptă după patruzeci și două de capitole.</p>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Povestea o urmărește pe Moses, cunoscută și ca Detectivul Distorsiuniilor, care posedă o abilitate unică de a vedea când cineva este afectat de <a href="distorsiuni.html">Fenomenul Distorsiunii</a> înainte ca acesta să se transforme complet într-o <a href="distorsiuni.html">Distorsiune</a>. Cu această putere, ea lucrează pentru a preveni formarea <a href="distorsiuni.html">Distorsiunilor</a>, alături de alte Săgeți care își desfășoară activitatea sub comanda ei la Biroul Moses.</p>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left;">Poveste</p>
+                    <hr style="margin-top: 10px; color: #FFEF23;">
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Povestea principală: <span style="color: #e12120;">[AVERTISMENT DE SPOILER]</span></summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Seria urmează un format episodic de tip "Monstrul Săptămânii", în care Moses și Ezra rezolvă <a href="distorsiuni.html">Distorsiuni</a> la cererea corporațiilor, asociațiilor sau indivizilor, deoarece Moses are abilitatea de a percepe distorsiunile tuturor celor pe care îi vede – mai exact, felul în care ar arăta odată ce s-ar distorsiona sau ce tip de distorsiune ar deveni. Moses deține, de asemenea, o pipă de fumat care este <a href="ego.html">E.G.O.-ul</a> ei.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Pe măsură ce povestea avansează, aflăm că atât Ezra, cât și Moses sunt veterani ai <a href="">Războiului Fumului</a>. Ezra se confruntă cu trauma de a fi fost crescut ca soldat copil în acele condiții, iar Moses se luptă cu vina pentru faptul că, sub comanda superiorilor săi, a condus sute, dacă nu chiar mii de oameni spre moarte, ucigând sute de cetățeni, copii și civili. Jobul de Detectiv al Distorsiunilor este modul în care încearcă să se ispășească pentru ceea ce a făcut.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Într-o zi, un fost coleg îi oferă un loc de muncă pentru a efectua „cercetări de teren” asupra <a href="distorsiuni.html">Distorsiunilor</a> din Districtul 11, sub pretextul că acest lucru o va ajuta să se răscumpere. Moses acceptă cu reticență și începe să se pregătească pentru această misiune, programată peste două luni. În acest timp, o întâlnește pe YuRia, o maestră de atelier care și-a manifestat propriul <a href="ego.html">E.G.O.</a> sub forma atelierului său. YuRia vrea să li se alăture, fiind fascinată de existența <a href="ego.html">E.G.O.-urilor</a> și dorind să le studieze mai profund, în special puterea pipei lui Moses. Moses o acceptă în echipă, fiind și ea interesată să înțeleagă mai bine fenomenul, pe care nici ea nu îl înțelege pe deplin. YuRia numește <a href="ego.html">E.G.O.-urile</a> „Psihoment”, dar, în esență, înseamnă aceleași lucruri.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">În timpul cercetărilor sale, YuRia a înregistrat imagini video din Districtul 14, districtul de reședință al acesteia, ceea ce este considerat un tabu de către Corporația N iar ca răspuns aceasta trimite un Vânător de Tabuuri, Vespa Crabro, pentru a confisca materialele. În timpul confruntării, ei reușesc să-l captureze pe Vespa în interiorul <a href="ego.html">E.G.O.-ului</a> lui YuRia timp de două luni, până când pornesc în misiunea lor din Districtul 11. Din cauza eșecului său de a-i captura pe cei care au încălcat tabuurile, Vespa este expulzat din Corporația N.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">În Districtul 11, o întâlnim pe Dias, fosta superioară al lui Moses din timpul Războiului Fumului. Extrem de carismatică, putred de bogată și ciudat de jovială, Dias este, de asemenea, parțial responsabilă pentru orchestrarea <a href="">Războiului Fumului</a>. Dias are un singur vis: vrea să detroneze Capul, iar pentru a face acest lucru, manipulează și trage sforile din umbră pentru a-și atinge obiectivul. <a href="distorsiuni.html">Distorsiunile</a> fac parte din planul ei, iar de asta are nevoie de Moses ca să le captureze. Tot aici, îi oferă lui Vespa o șansă de a intra din nou în Corporația N, cu condiția să se alăture echipei lui Moses și să o ajute să recupereze distorsiunile. Vespa acceptă oferta.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Povestea se încheie cu echipa îndreptându-se spre Cuibul Districtului 11 și începând să captureze <a href="distorsiuni.html">Distorsiunile</a> pe care le întâlnesc, așa cum li s-a cerut de către Dias.</p>
+                    </details>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left;">Personaje</p>
+                    <hr style="margin-top: 10px; color: #FFEF23; width: 29%;">
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Personaje principale:</p>
+                    <table id="personaje">
+                        <tr><th scope="col" colspan="100%">Personaje principale</th></tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/Moses-profile.png">
+                                <p>Moses</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/Ezra-profile.png">
+                                <p>Ezra</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/YuRia-profile.png">
+                                <p>YuRia</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Personaje secundare:</p>
+                    <table id="personaje">
+                        <tr><th scope="col" colspan="100%">Personaje Secundare (Importante poveștii)</th></tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/Vespa-profile.png">
+                                <p>Vespa</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/Dias-profile.png">
+                                <p>Dias</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/DISTORTION DETECTIVE/Han Hee-joon-profile.png">
+                                <p>Han Hee-joon</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

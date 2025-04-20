@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a class="active" href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title">Cuiburile</p>
+                    <p class="subtitle" style="padding-top: 50px;">Date generale</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/L_Corp_Nest_Outside.png" width="250px" height="145px">
+                        <p style="text-align: center;">Fostul Cuib al Corporației L (Districtul 12)</p>
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 28px;">Cuiburile (둥지, dungji) reprezintă zone segregate, controlate de o Aripă, dintr-un District, care acționează ca opusul Mahalalelor — fiind zone urbane dezirabile, susținute de către Aripi.</p>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 28px;">Deși servesc drept locuință pentru angajații Aripilor, numiți „Pene”, acești locuitori sunt, considerați sacrificabili, întrucât scopul real al unui Cuib este de a proteja „Ouăle” sale — adică Singularitatea sa</p>
+                </div>
+
+                <div class="info">
+                    <p class="subtitle">Descriere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 28px;">Fiecare district este împățit într-un Cuib și Mahalale; Mahalalele fiind zone extrem de periculoase și subdezvoltate economic, pe când Cuiburile sunt zone pașnice și, în general, preferabile. Cuiburile sunt întreținute prin taxele exorbitante și profitul obținut de fiecare Aripă prin intermediul Singularității sale. Se spune că există 26 de Districte și prin urmare 26 de Cuiburi, însă nicio harta a Orașului nu a ilustrat Districtul 26, existența sa fiind ambiguă.</p>
+                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 28px;">Locuitorii unui cuib aparțin, deobicei, burgheziei. Mahalalele au scopul de a își motiva cetățenii pentru a al putea părăsii și a se muta într-un cuib, și pentru ai motiva pe cetățenii Cuiburilor să depună efort în munca lor pentru nu ajunge în Mahalale, rezultatul fiind faptul că majoritatea locuitorilor Cuiburilor sunt muncitori harnici, conștienți de faptul că ar putea pierde totul în orice clipă. Majoritatea celor ce trăiesc în cuiburi sunt și angajați ai aripilor. Pe de asupra, toate cuiburile sunt diferite, având propria lor cultură, în funcție de district.</p>
+                </div>
+
+                <div class="info">
+                    <p class="subtitle">Colapsul unui cuib</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/L_Corp_Nest_Outside_Disaster.png" width="300px" height="165px">
+                        <p style="text-align: center; line-height: 18px;">Starea mizeră a cuibului Corporației L</p>
+                        <p style="text-align: center; line-height: 18px;">în timpul prezenței Bibliotecii</p>
+                    </div>
+                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 28px;">Deși Mahalalele unui district pot fi devastate fără să atragă prea multă atenție, nu același lucru se poate spune despre Cuiburi. Un Cuib ajunge sub colaps doar odată cu prăbușirea Aripii care îl susține, degradându-se ulterior într-un ghetou asemănător Mahalalelor — un loc care atrage tot soiul de oameni disperați. Library of Ruina își desfășoară povestea principală chiar în inima Cuibului colapsat al fostei Corporații L. În prezentul din Limbus Company, Corporația L încă nu a fost înlocuită, lăsând astfel întregul district într-o stare de mahala haotică, similară unui colaps social permanent.</p>
+                </div>
+
+                <div class="info">
+                    <p class="subtitle">Cuiburi cunoscute</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Cuibul J</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Facilitatea principală a Corporației L, deși inițial îngropată sub pământ, la un moment dat a ieșit la suprafață și a cauzat incidentul <a href="zile-nopti.html">Nopților Albe și al Zilelor Întunecate</a>. În cele din urmă, a fost transformată în <a href="biblioteca.html">Bibliotecă</a> de către Angela.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Cuibul K</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Situată undeva sub mahalalele Districtului 12, degenerând într-un loc plin de cadavre și insecte.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Gregor. Păcătoșii nu au reușit să recupereze Crenguța de Aur de la această locație din cauza intervenției lui Hermann, Gubo și Jia Huan, care au survolat zona și au furat-o după moartea lui Yuri.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Cuibul L</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Situată sub un mare cazinou din <a href="mahalale.html">mahalalele</a> Districtului 10, aceasta este o peșteră uriașă aflată în proces de transformare într-o extensie destinată depozitării seifurilor.</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Rodion. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Sonya le-a permis să o ia.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Cuibul N</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Situată sub conacul familiei Sinclair din orașul Calw, din Cuibul Districtului 11, fiind transformată într-o cameră pentru torturarea celor pe care Inchiziția Corporației N îi consideră eretici.</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Creanga de Aur a filialei abandonate a rezonat cu Sinclair și Kromer. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Demian a ucis-o pe Kromer pentru ei și, ulterior, le-a permis să o ia.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Cuibul V</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">O filială a Corporației L, anterior controlată de Corporației K, unde Dongrang și-a desfășurat cercetările înainte de a fi atacată și preluată de Alianța pentru Eliberarea de Tehnologie. <a href="abnos.html">Abnormitățile</a> din această filială au fost, cumva, păstrate inactive, iar alianța a reușit să extragă <a href="ego.html">E.G.O.-uri</a> din acestea. Creanga de Aur a acestei filiale a fost luată de Dongbaek, care, la sosirea Păcătoșilor, a fugit și a atacat filiala Corporației K unde se află Dongrang.</p>
+                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Creanga de Aur a rezonat cu Yi Sang, Dongrang, Dongbaek și Chestiei ce Plânge. Păcătoșii au reușit să recupereze Creanga de Aur după ce l-au învins pe Dongrang (atât ca <a href="distorsiuni.html">Distorsiune</a>, cât și ca mânuitor de <a href="ego.html">E.G.O.</a>).</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

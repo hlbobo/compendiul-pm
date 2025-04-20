@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown rotate">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu show">
+                            <div>
+                                <li>
+                                    <a href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 66px; text-align: center; padding-top: 40px;">Leviathan</p>
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left; padding-top: 50px;">Date generale</p>
+                    <hr style="margin-top: 10px; color: #FFEF23; width: 80%;">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/COVERS/Leviathan_Cover.png" width="270px" height="370px">
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;"><a href="https://archive.org/details/leviathan-PM/Leviathan Ch1/">Leviathan – Epopeea lui Vergilius, Scrutarea Roșie</a>, a fost o bandă desenată web serializată între 24 decembrie 2021 și 17 iunie 2022, fiind ulterior transformată într-un roman web după cel de-al unsprezecelea capitol. Povestea a fost publicată și lansată de <a href="pm.html">Project Moon</a> pe platforma oficială ProjectMoon Postype.</p>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Primele 11 capitole din Leviathan au fost ilustrate ca bandă desenată web de artistul Monggeu. Leviathan a fost prima bandă desenată ilustrată de Monggeu, însă, din cauza dificultăților legate de sănătatea sa fizică și  mentală, artistul a fost nevoit să se retragă din proiect. Odată cu plecarea ilustratorului, povestea a fost transformată într-un roman web până la ultimul capitol, fiind ilustrată de echipa artiștiilor <a href="pm.html">Project Moon</a>. Seria s-a încheiat pe 28 octombrie 2022.</p>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Pentru a adăuga la dezvoltarea tumultuoasă, doar primele 15 capitole au fost traduse complet  în engleză, deoarece echipa de traducere a trebuit să se concentreze pe lansarea jocului <a href="limbus.html">Limbus Company</a>. Traducerea în engleză a fost amânată, iar în prezent nu se știe când sau dacă Leviathan va primi o traducere completă. Există un șir de postări pe Twitter cu traduceri realizate de fani pentru capitolele rămase, postat de utilizatorul SnakeskinFS.</p>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left;">Poveste</p>
+                    <hr style="margin-top: 10px; color: #FFEF23;">
+                    <details>
+                        <summary style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Povestea principală: <span style="color: #e12120;">[AVERTISMENT DE SPOILER]</span></summary>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">În Ajunul Crăciunului, Vergilius, o <a href="sageti.html">Săgeată</a> de rang Culoare, cunoscut sub numele de Scrutarea Roșie, plănuiește să viziteze un orfelinat și să ofere cadouri copiilor care locuiesc acolo. Când ajunge, însă, descoperă faptul că orfelinatul a fost distrus de o ființă monstruoasă care ucide copiii. Începe să lupte cu creatura stranie, dar lupta lor este întreruptă de Iori, o altă <a href="sageti.html">Săgeată</a> de rang Culoare, care Vergilius credea că a murit în <a href="biblioteca.html">Bibliotecă</a>. Vergilius și Iori încep să se lupte, iar ea explică că a organizat atacul asupra orfelinatului ca parte a planului său de a-și găsi fiul dispărut. Vergilius nu reușește să țină pasul cu ea în luptă, iar Iori decide să-l lase în viață, împreună cu copiii care au supraviețuit.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Jumătate de an mai târziu, Garnet, o tânără <a href="sageti.html">Săgeată</a> care a crescut în orfelinat și a supraviețuit atacului, se reîntâlnește cu Vergilius. Garnet îi cere lui Vergilius să îl însoțească pentru a se întâlni cu prietena sa, Lapis, care a crescut alături de el în orfelinat și care îl admira pe Vergilius încă din copilărie. Deși Vergilius refuză cererea și cei doi se despart, în ziua întâlnirii programate, Garnet îl sună panicat, temându-se că i s-a întâmplat ceva rău lui Lapis. Vergilius acceptă șovăitor să-l ajute să o găsească, iar cei doi investighează o galerie de artă deținută de <a href="ring.html">Degetul Inelar</a> în căutarea ei. Deși investigația nu dă roade, la întoarcerea în <a href="birouri.html">Biroul</a> lui Vergilius, aceștia descoperă că au primit un videoclip filmat de Lapis, din care află că mulți dintre copiii orfelinatului au fost răpiți de <a href="ring.html">Inelar</a> și sunt folosiți în experimente pentru crearea unei noi <a href="singularitati.html">Singularități</a>.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Aceste informații duc la organizarea unei operațiuni de infiltrare de către <a href="birouri.html">Biroul</a> lui Vergilius și Garnet pentru a fura <a href="singularitati.html">Singularitatea</a> și a-i salva pe Lapis și ceilalți. Vergilius și Garnet participă la o licitație organizată de <a href="ring.html">Inelar</a> pentru a cumpăra ultimul obiect licitat, care oferă și privilegiul de a explora Coridorul Inelarului. De acolo, vor putea ajunge la locul unde se desfășoară experimentele. Ultimul obiect este un tablou intitulat Scrutarea Roșie, pictat de singurul supraviețuitor al unui <a href="sindicate.html">Sindicat</a> pe care Vergilius l-a anihilat cu ani în urmă, al cărui lider era chiar tatăl lui Lapis. Folosind această conexiune, Vergilius îl convinge pe Maestrul Inelarului, Jumsoon, să-i vândă tabloul în loc să-l ofere celui mai mare ofertant — Gubo din Corporația N, care pare să urmărească și el accesul la Coridor.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Odată ajunși în Coridor, Vergilius ucide ghidul însărcinat să se asigure că nu ies din zona permisă și începe să se îndrepte spre laborator împreună cu Garnet. Înainte de a ajunge departe, un Docent al <a href="ring.html">Inelarului</a> îi descoperă, iar Vergilius decide să-l trimită pe Garnet înainte, în timp ce el rămâne să lupte. Garnet reușește să învingă câțiva membri ai <a href="ring.html">Inelaruluii</a> și, în cele din urmă, găsește laboratorul unde copiii dispăruți sunt ținuți și supuși experimentelor. În timp ce încearcă să-i elibereze imediat, două dintre <a href="sageti.html">Săgețile</a> din <a href="birouri">Biroul</a> lui Vergilius, care s-au infiltrat pe alte căi, îl opresc, avertizându-l că acțiunea sa nesăbuită ar putea distruge datele despre <a href="singularitati.html">Singularitate</a>. Înainte ca descărcarea datelor să fie completă, Jumsoon ajunge în laborator și îi dezvăluie lui Garnet că <a href="ring.html">Inelarul</a> a fost implicat în atacul asupra orfelinatului pentru a crea subiecți perfecți pentru experimentele lor. Una dintre <a href="sageti.html">Săgeți</a>, Nanseul, se dovedește a fi un trădător, înjunghiindu-și camaradul și, la ordinul lui Jumsoon, activând un mecanism care pornește dispozitivul <a href="singularitati.html">Singularității</a>.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;"><a href="singularitati.html">Singularitatea</a> trimite conștiința lui Garnet prin diverse Lumi-Oglindă, unde trăiește unele dintre cele mai cumplite momente din viețile alternativelor sale. Aceste lumi includ variante ale lui Garnet inspirate din <a href="lor.html">Library of Ruina</a>, cum ar fi una în care el și Lapis sunt <a href="sageti.html">Săgeți</a> ale <a href="birouri.html">Biroului</a> Streetlight, Garnet luând rolul lui Lulu, iar Lapis pe cel al lui Mars, și o altă lume unde el este Roland, iar Lapis este Angelica. Într-o altă lume, Garnet este Maestrul Inelarului, vânzând pietre prețioase care fuseseră cândva prietenii săi din orfelinat. După ce își recapătă luciditatea, descoperă că rămâne conectat la patru lumi simultan, ceea ce îl încântă pe Jumsoon, care remarcă faptul că Garnet și-a păstrat rațiunea în ciuda ratei sale ridicate de refracție.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Cercetătorul Aseah, martor la transformarea lui Garnet, explică ce face <a href="singularitati.html">Singularitatea</a>. Folosind tehnologia <a href="fereastra-de-sticla.html">Ferestrei de Sticlă</a> a unui fost coleg, Aseah a creat o <a href="singularitati.html">Singularitate</a> care poate suprapune mai multe Lumi-Oglindă asupra unei singure persoane. De obicei, acest proces îi face pe subiecți să-și piardă mințile, iar copiii orfelinatului au fost supuși unor rate de refracție extreme până când fie s-au spart ca sticla, fie, după evenimentele Nopților Albe, s-au transformat în coconi asemănători unor pietre prețioase.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Îngrozit de indiferența lui Aseah și Jumsoon față de suferința copiilor, Garnet îl atacă pe Maestru, hotărât să-l omoare. Cu ajutorul <a href="lumi-oglinda.html">Lumilor-Oglindă</a> pe care le canalizează, reușește să țină pasul cu Jumsoon. Totuși, înainte de a-l putea ucide, refracția se încheie, iar Garnet rămâne singur, ca el însuși, permițându-i lui Jumsoon să obțină avantajul și să-i taie picioarele. Coconii altor experimente eclozează, dar din ei nu ies copiii orfelinatului, ci <a href="peccatula.html">Peccatula</a>. Înnebunit de durere și disperare, Garnet se închide în sine și devine el însuși un cocon, iar Jumsoon regretă pierderea unui subiect de experiment atât de promițător.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Între timp, Vergilius își croiește un drum prin Coridor și îl întâlnește pe Gubo, care reușise să intre fără a cumpăra tabloul. Gubo dezvăluie că a venit să-l recupereze pe Aseah, un fost angajat al Corporației N, răpit de <a href="ring.html">Inelar</a> pentru a dezvolta <a href="singularitati.html">Singularitatea</a>. După ce aproape că este ucis, Gubo se conformează și îi oferă lui Vergilius acces la unele materiale ale <a href="singularitati.html">Singularității</a>. Cei doi ajung în laborator, unde Vergilius îl recunoaște imediat pe Garnet în coconul roșu. Acceptând pierderea sa, Vergilius începe să ucidă <a href="peccatula.html">Peccatula</a>. Jumsoon, amuzat, ordonă concentrarea întregii puteri a <a href="singularitati.html">Singularității</a> asupra lui Vergilius, ceea ce îl face să se <a href="distorsiuni.html">distorsioneze</a>.</p>
+                        <p style="padding-top: 20px; padding-left: 20px; font-size: 24px; text-align: left; line-height: 26px;">Vergilius și Jumsoon se înfruntă, cu Jumsoon capabil să prevadă viitorul din nenumărate <a href="lumi-oglinda.html">Lumi-Oglindă</a>. Vergilius aproape cedează disperării, dar o voce din mintea sa îi vorbește, încercând să-l convingă să se <a href="distorsiuni.html">distorsioneze</a> complet. Vergilius refuză și manifestă <a href="ego.html">E.G.O.</a>, lupta reluându-se. A Jumsoon, incapabil să prevadă această schimbare, începe să piardă controlul și este transformat într-un vas pentru <a href="abnos.html">Abnormitatea</a> Schadenfreude. Vergilius îl învinge, apoi descoperă un singur tub de test rămas în laborator: Lapis, care însă se identifică acum drept Charon. În acel moment, Faust din <a href="lcbc.html">Limbus Company</a> apare și îi oferă lui Vergilius o șansă de a-i recupera pe Lapis și Garnet, iar el, inspirat de evenimentele zilei, decide să o asculte.</p>
+                    </details>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 40px; text-align: left;">Personaje</p>
+                    <hr style="margin-top: 10px; color: #FFEF23; width: 37%;">
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Personaje principale:</p>
+                    <table id="personaje">
+                        <tr><th scope="col" colspan="100%">Personaje principale</th></tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Vergilius-profile.png">
+                                <p>Vergilius</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Garnet-profile.png">
+                                <p>Garnet</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Charon-profile.png">
+                                <p>Lapis / Charon</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 32px; text-align: left;">Personaje secundare:</p>
+                    <table id="personaje">
+                        <tr><th scope="col" colspan="100%">Biroul lui Vergilius</th></tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Denver-profile.png">
+                                <p>Denver</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Rikako-profile.png">
+                                <p>Rikako</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Lan Yen-profile.png">
+                                <p>Lan Yen</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Nanseul-profile.png">
+                                <p>Nanseul</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="personaje">
+                        <tr><th scope="col" colspan="100%">Degetul Inelar</th></tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Jumsoon-profile.png">
+                                <p>Jumsoon</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Pop-profile.png">
+                                <p>Pop</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Pablo-profile.png">
+                                <p>Pablo</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Asura-profile.png">
+                                <p>Asura</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="personaje">
+                        <tr>
+                            <th colspan="2">Corporația N</th>
+                            <th colspan="2">Altele personaje</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Gubo-profile.png">
+                                <p>Gubo</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Aseah-profile.png">
+                                <p>Aseah</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Iori-profile.png">
+                                <p>Iori</p>
+                            </td>
+                            <td>
+                                <img src="Imagini/Restul site-ului/LEVIATHAN/Tomerry-profile.png">
+                                <p>Tomerry</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

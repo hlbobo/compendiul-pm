@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="active" href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <a href="univershub.html" style="padding: 0;"><span style="margin: 0; padding: 0;">Univers</span></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="orasul.html">
+                                        <span>Orașul</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ego.html">
+                                        <span>E.G.O</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distorsii.html">
+                                        <span>Distorsii</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="abnos.html">
+                                        <span>Abnormalități</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lobcorpcom.html">
+                                        <span>Lobotomy Corporation (Compania)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="libraria.html">
+                                        <span>Librăria</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lcbc.html">
+                                        <span>Limbus Company (Compania)</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="image">
+                    <img src="Imagini/logos/logo real real.png" width="450px" height="450px" style="z-index: 8;" />
+                    <
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Ce este "Compendiul Project Moon"?</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Compendiul Project Moon este un proiect independent, nesusținut oficial de către Project Moon, realizat de către Hațegan Bogdan (a.k.a. BoBo) cu scopul de a colecționa, traduce și prezenta într-un mod digerabil și ușor de înțeles informațiile despre jocurile, cărțile, cât și despre universul narativ creat de către studioul Coreean Project Moon pentru fanii acestora vorbitori de limba română.</p>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cât de frecvent vor fi actualizate informațiile de pe acest site?</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Voi încerca să actualizez informațiile de pe acest site cât se poate de curând după lansarea unor informații noi și relevante, însă datorită faptului că acest proiect este unul independent, nesusținut oficial de către Project Moon, faptului că nu există o traducere oficială în limba română pentru proiectele realizate de către Project Moon (însemând că eu trebuie să mă ocup de culegerea informațiilor, traducerea acestora și inserarea acestora într-o manieră plăcută în acest site), cât și din cauza faptului că în momentul curent încă sunt elev/student, s-ar putea să existe diverse întârzieri în ceea ce privește acest subiect.</p>
+                </div>
+                <div class="info">
+                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cine este dezvoltatorul acestui site?</p>
+                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Detaliu menționat în primul paragraf, dar, probabil, vă gândiți la ceva mai specific.</p>
+                    <p style="font-size: 24px; text-align: center;">Eu, Hațegan Bogdan, sunt un elev de clasa a 12-a din România (duh), care aspiră la un loc de muncă în domeniul programării web. În momentul de față încerc să învăț CSS și Javascript, și să implementez în acest site tot ceea ce pot pentru a definitiva aceste cunoștiințe. De asemenea, fac videoclipuri pe platforma YouTube sub numele "BoBo", videoclipurile respective pot varia de la let's play-uri, la tier list-uri, recenzii, unboxing-uri și chiar vlog-uri. Pe acest canal îmi postez și isprăviile în domeniul muzicii, făcând muzică sub numele "Oraculum", nume utilizat pentru toate isprăviile mele creative care includ muzică, povești și poezie.</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

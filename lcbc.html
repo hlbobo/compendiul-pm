@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label onclick="togglesidenav()" for="sidebar-active" class="open-sidebar-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label onclick="togglesidenav()" for="sidebar-active" class="close-sidebar-button" id="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <div class="logo-side-nav">
+                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pm.html">
+                            <span>Project Moon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Jocuri</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a href="lobcorp.html">
+                                        <span>Lobotomy Corporation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lor.html">
+                                        <span>Library of Ruina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="limbus.html">
+                                        <span>Limbus Company</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="togglesubmenu(this)" class="dropdown">
+                            <span>Lucrări literare</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </button>
+                        <ul class="submenu">
+                            <div>
+                                <li>
+                                    <a class="active" href="wonderlab.html">
+                                        <span>Wonderlab</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="distortdet.html">
+                                        <span>Distortion Detective</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="leviathan.html">
+                                        <span>Leviathan</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="info">
+                    <p class="title">Limbus Company (Compania)</p>
+                    <p class="subtitle" style="padding-top: 50px;">Introducere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/Site-logo.png" width="190px" height="200px">
+                    </div>
+                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Limbus Company (Hangul: 림버스 컴퍼니, Rimbeoseu keompeoni) este o companie enigmatică care operează în <a href="orasul.html">Oraș</a>, capitalizând pe prăbușirea <a href="lobcorpcom.html">Lobotomy Corporation</a>.</p>
+                    <table class="cuprins" style="text-align: left; font-size: 18px; width: 150px;">
+                        <tr><th style="text-align: center;">Cuprins</th></tr>
+                        <tr><td><a href="#fundal">1. Date de fundal</a></td></tr>
+                        <tr><td><a href="#departamente">2. Departamente</a></td></tr>
+                        <tr><td><a href="#lca" style="margin-left: 15px;">2.1. LCA</a></td></tr>
+                        <tr><td><a href="#lcb" style="margin-left: 15px;">2.2. LCB</a></td></tr>
+                        <tr><td><a href="#lcc" style="margin-left: 15px;">2.3. LCC</a></td></tr>
+                        <tr><td><a href="#lccb" style="margin-left: 25px;">2.3.1. LCCB</a></td></tr>
+                        <tr><td><a href="#lcca" style="margin-left: 25px;">2.3.2. LCCA</a></td></tr>
+                        <tr><td><a href="#lcd" style="margin-left: 15px;">2.4. LCD</a></td></tr>
+                        <tr><td><a href="#lce" style="margin-left: 15px;">2.5. LCE</a></td></tr>
+                        <tr><td><a href="#trivia">3. Curiozități</a></td></tr>
+                    </table>
+                </div>
+                <div class="info" id="fundal">
+                    <p class="subtitle">Date de fundal</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Deși se pare că este susținută de un număr de finanțatori bogați (așa cum se dovedește prin deținerea de Fiole HP și arme de foc) și dispune de un capital semnificativ, scopurile reale ale companiei rămân necunoscute. Potrivit lui Dante, diversele Departamente ale companiei au propriile obiective, fără un scop comun. Obiectivele LCB sunt să caute și să recupereze <a href="ego.html#echipament">echipamentul E.G.O</a> al <a href="aripi.html">Aripii</a> căzute, să adune Enkefalină, să încarcereze <a href="abnos.html">abnormitățile</a> și, în final, să obțină Crengile de Aur — esența <a href="singularitati.html">Singularității</a> <a href="lobcorpcom.html">Corporației L</a>.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Caiman de la LCCA afirmă că operațiunile privind Crengile de Aur ale companiei sunt doar o sarcină secundară și că aceasta își propune să se definească ca o companie specializată în manipularea și cercetarea <a href="distorsiuni.html">Distorsiunilor</a>.</p>
+                </div>
+                <div class="info" id="departamente">
+                    <p class="subtitle">Departamente</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p id="lca" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">LCA</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Departamentul LCA este unul misterios, ale cărui operativi poartă echipament de protecție monoculară. Se știe puțin despre rolul lor în cadrul companiei, însă Faust îi descrie drept „unitatea de operațiuni speciale.”</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Prima lor apariție este în banda desenată/romanul web prequel <a href="leviathan.html">Leviathan</a>, unde sunt văzuți însoțind-o pe Faust în timp ce îi recrutează pe Vergilius și pe Charon în cadrul Departamentului LCB pentru a ghida Păcătoșii.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">LCA este menționat de Vergilius în Canto-ul V. El îi informează pe Păcătoși că, în cazul în care își va pierde comunicația cu aceștia pentru mai mult de 6 ore după ce Balena Palidă îi înghite, LCA va prelua misiunea Crengilor de Aur și va încerca să dezintegreze Balena. Acest fapt sugerează că LCA îndeplinește un rol de luptă în cadrul companiei și dispune de resursele și puterea necesare pentru a lupta direct împotriva unei Calamități din Marile Lacuri.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">LCA apare apoi în Intervallo-ul III-2: Yield My Flesh to Claim Their Bones, unde este trimis în <a href="mahalale.html">Mahalalele</a> T Corp pentru a recupera un Monolit legat de fenomenul <a href="distorsiuni.html">Distorsiunilor</a>, precum și pe Bamboo-hatted Kim, care fusese distorsionat de Monolit și readus la fire de către Păcătoși. După ce Ezra îi convinge, ei acceptă să-l transporte atât pe Kim, cât și pe Aeng-du, împreună cu Monolitul, pentru studiu. De asemenea, îi avertizează pe Păcătoși să plece imediat, deoarece erau siguri că se vor întâlni cu Degetul Mare dacă ar fi rămas mai mult; un operativ LCA afirmă criptic că „un dușman este un prieten, iar un prieten este un dușman” în legătură cu provocarea companiei față de Degetul Mare.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">O echipă de Cercetare și Dezvoltare a LCA-ului este menționată în textele modulelor "Takeoff" pentru <a href="ego.html">E.G.O.-uri</a> și <a href="identitati.html">Identități</a>.</p>
+                    <p id="lcb" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Bus</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Departamentul de Autobuze Limbus Company, sau LCB, este alcătuit din treisprezece angajați desemnați „Păcătoși”. Numele lor derivă din modul de transport, autobuzul special, Mephistopheles.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Fiecare Păcătos a fost recrutat special datorită capacității lor de a rezona cu Păcătosul #10, Dante, care acționează ca Director Executiv al departamentului. Pe lângă posibilitatea de a reînvia prin ceasul lui Dante, Păcătoșii pot rezona și cu Crengile de Aur din cadrul filialelor <a href="lobcorpcom.html">Corporației L</a>, fiind astfel însărcinați să se aventureze în temnitele subterane periculoase pentru a le recupera.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Săgeata de rang Culoare cunoscută sub numele de Scrutarea Roșie, Vergilius, a fost descoperită și recrutată de Faust pentru a ghida LCB-ul prin Oraș, pe baza promisiunii de a restabili Identitatea lui Lapis din corpul lui Charon — care acum acționează ca șoferul autobuzului Mephistopheles.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;"><a href="limbus.html#personaje">Membrii departamentului</a></p>
+                    <p id="lcc" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Clearance</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Departamentul de Eliberare Limbus Company, sau LCC, este o unitate de forțe speciale care asistă LCB în recuperarea cu succes a Crengilor de Aur. Potrivit lui Faust în Canto II, acesta este alcătuit din diverși profesioniști și veterani, și se spune că este foarte priceput în desfășurarea operațiunilor de spionaj. Departamentul este împărțit în două echipe: LCCB (Echipa de recunoaștere) și LCCA (Echipa de recuperare), ambele fiind divizate în secțiuni suplimentare.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Pentru că Dante nu îi poate reînvia pe cei care nu sunt Păcătoși, se acordă o atenție deosebită echipamentului lor, folosindu-se armură corporală, arme de foc, scuturi balistice, armament cu electroșocuri și vehicule blindate.</p>
+                    <p id="lccb" style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Clearance Before</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 28px;">Echipa de recunoaștere, sau LCCB, îndeplinește sarcini de recunoaștere și de colectare de informații despre locațiile țintă pe care Păcătoșii le vizitează, precum și planificarea misiunilor de recuperare a Crengilor de Aur. LCCB dispune de o secțiune de Observare Preliminară care are, de asemenea, sarcina de a explora în avans și de a redacta observațiile preliminare ale abnormităților cu care se pot confrunta, așa cum se vede în Jurnalul de Observații 1 al abnormității My Form Empties. Potrivit lui Effie, care aparținea acestei divizii împreună cu Saude, aceasta are mai mult personal decât restul LCCB, plătește cel mai puțin și este, în general, tratată ca fiind dispensabilă.</p>
+                    <p id="lcca" style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Clearance After</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 28px;">Echipa de recuperare, sau LCCA, are sarcina de a curăța după LCB/sau de a recupera Păcătoșii în cazul în care echipa suferă o incapacitate severă în timpul recuperării Crengilor de Aur. De asemenea, vor recupera și alți angajați ai Limbus Company, așa cum au procedat cu Saude și Pilot după ce misiunile lor au eșuat. Nu se știe prea multe despre această echipă, în afară de faptul că sunt echipați cu Fiole HP  — capabile să regenereze din răni fatale odată injectate în corp — obținute prin conexiunile lui Vergilius cu Siegfried de la Corporația K.</p>
+                    <p id="lcd" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Distorion</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Departamentul de Distorsiuni Limbus Company, sau LCD, este un departament care găzduiește Săgețiile consultante și este dedicat gestionării problemelor legate de <a href="distorsiuni.html">Distorsiuni</a>. Potrivit lui Faust, deși dimensiunea departamentului este mică, existența sa demonstrează că Limbus Company are un interes real în studiul fenomenului <a href="distorsiuni.html">Distorsiunilor</a>.</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Moses și Ezra, foste Săgeți independente specializate în cazuri ce implică <a href="distorsiuni.html">Distorsiuni</a>, fac parte din LCD. Vespa, care a fost anterior Vânător de Tabuuri al Corporației N, pare a fi de asemenea parte a LCD. Ezra se prezintă ca membră a LCD în Intervallo-ul III-2, ajutându-l pe Dante să stabilizeze Monolitul care a cauzat distorsionarea membrilor Descendenței Tăișului, Bamboo-hatted Kim și Aeng-du. Ea îi convinge, de asemenea, pe LCA să aducă ambii membri ai Descendenței Tăișului înapoi pentru studiu, alături de Monolit. Vespa este menționat pentru prima dată în prima parte a Canto-ului VII: The Dream Ending, unde se sugerează că lucrează împreună cu Moses și Ezra.</p>
+                    <p id="lce" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Limbus Company Extraction</p>
+                    <p style="padding-top: 20px; padding-left: 15px; font-size: 28px; text-align: left; line-height: 28px;">Departamentul de Extragere Limbus Company, sau LCE, servește ca echipă de cercetare și dezvoltare a Limbus Company. Condus de cercetătorul șef Hohenheim, responsabilitățile acestui departament includ cercetarea și clasificarea abnormităților capturate, a <a href="distorsiuni.html">Distorsiunilor</a> și a <a href="peccatula.html">Peccatula</a>, precum și extragerea de <a href="ego.html">E.G.O.</a> din aceste abnormități și realizarea de experimente legate de Monolit. Ei sunt introduși în Intervallo-ul V-1: LCB Regular Check-up.</p>
+                </div>
+                <div class="info" id="trivia">
+                    <p class="subtitle">Curiozități</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Hohenheim susține că este cercetătorul-șef al întregii companii, nu doar al departamentului LCE. Faust afirmă că acest lucru este adevărat doar pentru că ea și Yi Sang sunt clasificați ca Păcătoși și, astfel, nu figurează ca parte a personalului de cercetare al companiei.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Potrivit lui Faust, contractele Păcătoșilor nu permit demisia. Există, însă, o clauză specială care o interesează pe Ishmael. Ce presupune această clauză rămâne necunoscut.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Deși Faust este subordonată lui Dante, ea are acces la informații cu niveluri de securitate prea înalte pentru ca Dante să le poată accesa.</p>
+                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Termenul „Limbus” este un termen medical care se referă la marginea sau limita unui țesut, precum „limbusul corneei”, marginea dintre cornee și sclera ochiului. De asemenea, acesta poate face referire la sistemul limbic, întrucât ambele împărtășesc aceeași rădăcină lexicală.</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
