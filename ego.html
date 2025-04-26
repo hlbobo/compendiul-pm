@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -21,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -85,83 +86,299 @@
                         </ul>
                     </li>
                     <li>
-                        <button onclick="togglesubmenu(this)" class="dropdown">
-                            <a href="univershub.html" style="padding: 0;"><span style="margin: 0; padding: 0;">Univers</span></a>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                        </button>
-                        <ul class="submenu">
-                            <div>
-                                <li>
-                                    <a href="orasul.html">
-                                        <span>Orașul</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="active" href="ego.html">
-                                        <span>E.G.O</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="distorsii.html">
-                                        <span>Distorsii</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="abnos.html">
-                                        <span>Abnormalități</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lobcorpcom.html">
-                                        <span>Lobotomy Corporation (Compania)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="libraria.html">
-                                        <span>Librăria</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lcbc.html">
-                                        <span>Limbus Company (Compania)</span>
-                                    </a>
-                                </li>
-                            </div>
-                        </ul>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+                
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
+        
         <main>
             <div class="container">
-                <div class="image">
-                    <img src="Imagini/logos/logo real real.png" width="450px" height="450px" style="z-index: 8;" />
-                    <
-                </div>
                 <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Ce este "Compendiul Project Moon"?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Compendiul Project Moon este un proiect independent, nesusținut oficial de către Project Moon, realizat de către Hațegan Bogdan (a.k.a. BoBo) cu scopul de a colecționa, traduce și prezenta într-un mod digerabil și ușor de înțeles informațiile despre jocurile, cărțile, cât și despre universul narativ creat de către studioul Coreean Project Moon pentru fanii acestora vorbitori de limba română.</p>
+                    <p class="title">E.G.O.</p>
+                    <p class="subtitle" style="padding-top: 50px;">Introducere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr); width: 79%;">
+                    <div id="imag1" style="margin-bottom: 0;">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Vergilius-EGO.webp" width="350px" height="210px">
+                        <p style="text-align: center;">E.G.O.-ul lui Vegilius</p>
+                    </div>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Xiao-EGO.webp" width="350px" height="300px">
+                        <p style="text-align: center;">E.G.O.-ul lui Xiao</p>
+                    </div>
+                    <p class="art-text">E.G.O. (Exterminarea Organului Geometric) este un tip de echipament personalizat manifestat din mintea unui individ. Acesta ia de obicei forma unor arme și/sau armuri extrem de puternice.</p>
+                    <p class="art-text">Există două tipuri principale de E.G.O.: E.G.O. extras și împrumutat de la o Abnormitate, și E.G.O. manifestat. Păcătoșii din Corporația Limbus folosesc primul tip.</p>
+                    <table class="cuprins" style="text-align: left; font-size: 18px; width: 270px;">
+                        <tr><th style="text-align: center;">Cuprins</th></tr>
+                        <tr><td><a href="#EGO-ABNO">1. E.G.O.-ul Abnormităților</a></td></tr>
+                        <tr><td><a href="#EGO-LOB" style="margin-left: 15px;">1.1. E.G.O. Lobotomy</a></td></tr>
+                        <tr><td><a href="#EGO-LOB-ORG" style="margin-left: 25px;">1.1.1. Origini</a></td></tr>
+                        <tr><td><a href="#EGO-LOB-FUNC" style="margin-left: 25px;">1.1.2. Funcții</a></td></tr>
+                        <tr><td><a href="#EGO-LOB-EXTR" style="margin-left: 25px;">1.1.3. Extracție</a></td></tr>
+                        <tr><td><a href="#EGO-LCE" style="margin-left: 15px;">1.2. E.G.O. LCE</a></td></tr>
+                        <tr><td><a href="#EGO-CORR" style="margin-left: 15px;">1.3. Coroziunea E.G.O.-ului</a></td></tr>
+                        <tr><td><a href="#EGO-MAN">2. E.G.O. Manifestat</a></td></tr>
+                        <tr><td><a href="#EGO-MAN-ORG" style="margin-left: 15px;">2.1. Origini</a></td></tr>
+                        <tr><td><a href="#EGO-MAN-FUNC" style="margin-left: 15px;">2.2. Funcții</a></td></tr>
+                        <tr><td><a href="#EGO-MAN-DIST" style="margin-left: 15px;">2.3. Manifestare & Diferențe față de Distorsiuni</a></td></tr>
+                        <tr><td><a href="#EGO-MAN-VOL" style="margin-left: 25px;">2.1.1. E.G.O. Volatil</a></td></tr>
+                        <tr><td><a href="#EGO-SIN">3. E.G.O.-urile Păcătoșilor</a></td></tr>
+                        <tr><td><a href="#UTIL-EGO-ABNO" >4. Utilizatori de E.G.O. al Abnormităților</a></td></tr>
+                        <tr><td><a href="#UTIL-EGO-MAN">5. Utilizatori de E.G.O. Manifestat</a></td></tr>
+                    </table>
                 </div>
-                <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cât de frecvent vor fi actualizate informațiile de pe acest site?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Voi încerca să actualizez informațiile de pe acest site cât se poate de curând după lansarea unor informații noi și relevante, însă datorită faptului că acest proiect este unul independent, nesusținut oficial de către Project Moon, faptului că nu există o traducere oficială în limba română pentru proiectele realizate de către Project Moon (însemând că eu trebuie să mă ocup de culegerea informațiilor, traducerea acestora și inserarea acestora într-o manieră plăcută în acest site), cât și din cauza faptului că în momentul curent încă sunt elev/student, s-ar putea să existe diverse întârzieri în ceea ce privește acest subiect.</p>
+
+                <div class="info" id="EGO-ABNO">
+                    <p class="subtitle">E.G.O.-ul Abnormităților</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr)">
+                    <p class="art-text">Acesta este un termen general care se referă la E.G.O.-ul extras și împrumutat de la Abnormalități.</p>
+                    <p class="art-text">E.G.O-ul utilizat de către Bibliotecari și de către Păcătoși ia o formă diferită față de E.G.O.-ul Lobotomy al Corporației L și probabil nu ar fi clasificat ca atare. Deși nu este explicat în detaliu, Faust menționează că acestea reprezintă forma "de bază" a E.G.O.-ului, în timp ce E.G.O.-ul Lobotomy se referă în mod specific la o versiune mai concentrată și rafinată, materializată sub formă de Arme și Costume E.G.O. .</p>
+                    <p class="art-text">Aceste E.G.O.-uri "de bază" prezintă același risc de coroziune ca și E.G.O.-ul Lobotomy, însă pericolul de a te pierde în ele este mai mare decât în cazul echipamentului E.G.O. standard.</p>
+                    
+                    <p id="EGO-LOB" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">E.G.O. Lobotomy</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Lobotomy_E.G.O_Solemn_Lament_Yi_Sang_Full_Uptied.webp" width="390px" height="230px">
+                        <p style="text-align: center;">ID al lui Yi Sang utilizând E.G.O.-ul Lobotomy::Solemn Lament</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">E.G.O.-urile Lobotomy reprezintă o clasă rafinată de E.G.O. comprimată sub forma de echipament pentru o utilitate generală. Acesta este mai stabil decât echipamentele folosite de către Bibliotecari și Păcătoși, permițând utilizare prolongată cu un risc de coroziune redus.</p>
+                    <p class="art-text" style="padding-left: 15px;">E.G.O.-urile Lobotomy și-au avut originea în Corporația L. Cu toate acestea, pot fi produse și de alte entități în condiții potrivite, așa cum a demonstrat departamentul LCE al Limbus Company prin echipamentele lor extrem de similare, denumite E.G.O. LCE.</p>
+                    <p class="art-text" style="padding-left: 15px;">Termenul „E.G.O. Lobotomy” a fost inițial folosit de membrii Alianței pentru Eliberarea Tehnologică, care au utilizat echipamente E.G.O. obținute de la una dintre filialele prăbușite ale Corporației L.</p>
+                    
+                    <p id="EGO-LOB-ORG" class="art-text" style="padding-left: 15px; text-decoration: underline 2px var(--second-text-clr);">Origini</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/carmen_experiments_cogito.webp" width="335px" height="195px">
+                        <p style="text-align: center;">Primele experimente cu Cogito, inițiate de Carmen</p>
+                    </div>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Înainte de evenimentele jocului Lobotomy Corporation, Carmen studia Cogito în interesul Proiectului Sămânța Luminii. În timpul cercetărilor, ea și echipa sa au descoperit existența Abnormităților, metodele de creare a acestora și existența E.G.O.-ului. Primul E.G.O. extras dintr-o Abnormitate a fost sabia Mimicry, cu care Ceața Roșie avea să devină faimoasă.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Echipa nu a înțeles imediat cum funcționează E.G.O.-ul, Carmen a descris arma ca fiind instabilă, afirmând că a fost o minune că reușiseră să o extragă. Cu toate acestea, au ajuns să o înțeleagă suficient de bine până când Ayin a preluat controlul Corporației L. Sub conducerea lui A, angajații foloseau în mod regulat E.G.O. extras din Abnormități de către Binah și Echipa de Extracție.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">După Nopțile Albe și Zilele Întunecate, și ulterior exilarea Bibliotecii din Districtul 12, filialele prăbușite ale Corporației L au devenit accesibile pentru recoltare. Acest lucru a permis unor facțiuni întâmplătoare să fure și să utilizeze vechiul E.G.O. Lobotomy.</p>
+                    
+                    <p id="EGO-LOB-FUNC" class="art-text" style="padding-left: 15px; text-decoration: underline 2px var(--second-text-clr);">Funcții</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Cel mai atrăgător beneficiu al E.G.O-ului Lobotomy este maleabilitatea sa. Poate fi folosit eficient de oricine și nu necesită pregătire specială pentru a fi utilizat. Acest lucru a permis angajaților obișnuiți ai Corporației L să facă față amenințărilor cu pricepere, în ciuda faptului că jobul nu cerea abilități de luptă.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Totuși, nu orice persoană era automat eligibilă să folosească orice piesă de E.G.O., deoarece multe necesitau anumite niveluri minime de virtuți. Virtuțile Prudenței, Fortitudinii, Cumpătării și Justiției erau măsurate la angajați și impuse ca cerințe minime pentru utilizarea anumitor E.G.O-uri, cu scopul de a preveni Coroziunea E.G.O.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">E.G.O-ul este mai mult decât un echipament separat de Abnormitatea din care provine. Este „coaja” E.G.O.-ului altcuiva, împrumutată temporar de cel care o poartă. Astfel, atunci când o persoană folosește E.G.O-ul Corporației L, ea se sincronizează, în esență, cu Abnormitatea de la care acesta provine. Deși purtarea echipamentului este suficientă pentru a-i împrumuta puterea, este posibil să profiți și mai mult de E.G.O. prin a prelua această putere și a o revendica ca pe a ta.</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">După zisele lui Binah, acest lucru era ceva de care angajații Corporației L erau incapabili, fiind realizarea care a făcut-o pe Ceața Roșie atât de puternică.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Lobotomy_E.G.O_Red_Eyes_&_Penitence_Ryōshū_Full_Uptied.webp" width="335px" height="195px">
+                        <p style="text-align: center;">ID al lui Ryoshu folosind diverse echipamente E.G.O</p>
+                    </div>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Corporația L numea armura extrasă „Costume E.G.O.”, iar armele extrase „Arme E.G.O.”. Deși Costumele E.G.O. variau considerabil în culoare și design, toate aveau o piesă superioară care ajungea peste talie și (cu patru excepții) includeau un guler și o cravată. Armele E.G.O. puteau fi atât pentru luptă corp la corp, cât și la distanță, variind de la mănuși până la tunuri.</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">În plus, exista și o a treia categorie de obiecte obținute de la Abnormități, numite „Cadouri E.G.O.”. După cum sugerează și numele, Cadourile E.G.O. puteau fi considerate literalmente cadouri de la Abnormități. Erau mici amulete purtate pe diferite părți ale corpului pentru a oferi beneficii, cum ar fi creșterea HP-ului sau a vitezei de mișcare.</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Deși Cadourile E.G.O. sunt mai slabe decât Costumele și Armele, ele fac totuși parte din E.G.O.-ul asociat Abnormităților și prezintă riscul de a afecta negativ pe cineva care poartă prea multe.</p>
+
+                    <p id="EGO-LOB-EXTR" class="art-text" style="padding-left: 15px; text-decoration: underline 2px var(--second-text-clr);">Extracție</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">E.G.O.-ul Lobotomy este extras prin folosirea unor cutii unice de Enkefalină Pozitivă („PE-Boxes”). Aceste cutii sunt colectate de la Abnormități, care produc Enkefalină atunci când sunt satisfăcute.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Artbook-ul jocului Lobotomy Corporation explică faptul că o Abnormitate produce, tehnic, două seturi de cutii de Enkefalină atunci când este fericită: cele generale pe care compania le vinde pentru a-și susține statutul de Aripă și cele specifice Abnormității. Aceste cutii specifice puteau fi folosite pentru a debloca informații despre Abnormitate sau pentru a extrage materialele necesare producerii Echipamentului E.G.O asociat.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Cu cât Nivelul de Risc al Abnormității este mai mare, cu atât mai multe cutii sunt necesare pentru acest proces.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">După atingerea unui Nivel de Observare suficient de ridicat cu Abnormitatea, „arhetipul” acesteia poate fi extras folosind cutiile, după care E.G.O-ul Lobotomy poate fi obținut. În jocul Lobotomy Corporation, există o limită prestabilită a numărului de Costume și Arme E.G.O care pot fi extrase de la o Abnormitate, limita devenind tot mai mică cu cât Nivelul de Risc este mai mare. Dacă una dintre aceste piese de Echipament E.G.O. era distrusă odată cu moartea Angajatului care o purta, o nouă piesă putea fi extrasă pentru a o înlocui.</p>
+                    
+                    <p id="EGO-LCE" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">E.G.O. LCE</p>
+                    <div id="imag1" style="margin-top: 15px;">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/LCE_E.G.O_Ardor_Blossom_Star_Faust_Full_Uptied.webp" width="320px" height="180px">
+                        <p style="text-align: center;">ID al lui Faust utilizând E.G.O.-ul LCE::Ardor Blossom Star</p>
+                    </div>
+                    <div id="imag1" style="margin-top: 10px; width: 280px;">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/LCE_E.G.O_Lantern_Yi_Sang_Evade_Sprite.webp" width="280px" height="210px">
+                        <p style="text-align: center;">Sprite-ul de evadare al lui Yi Sang cu E.G.O.-ul LCE::Lantern</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">E.G.O.-ul LCE se referă la E.G.O-ul extras și utilizat de departamentul LCE al Limbus Company. Este în mare parte comparabil cu E.G.O.-ul Lobotomy în ceea ce privește forma și funcția, având în vedere că LCE urmărește să copieze și să depășească o mare parte din activitatea dispărută a Corporației Lobotomy. La fel ca și în cazul Corporației L, echipamentul este compus din Arme și Costume. Cu toate acestea, există încă trăsături distinctive. În povestea Identității LCE a lui Faust, Carmen descrie acordajul E.G.O.-ului a departamentului LCE drept „mai apropiată de utilizarea E.G.O-ului real [comparativ cu] echipamentul E.G.O al Corporației L”.</p>
+                    <p class="art-text" style="padding-left: 15px;">E.G.O.-ul LCE permite o rată mai mare de acordaj și sincronizare cu Abnormitatea relevantă, care poate fi realizată în mod deliberat prin extinderea înțelegerii și empatiei față de aceasta. Acest lucru oferă beneficii mai impresionante decât a reușit Corporația L să obțină cu E.G.O-ul său, cum ar fi zborul și fluctuația formei. În plus, echipamentul E.G.O. LCE poate determina utilizatorul să dezvolte trăsături neumane, cum ar fi cozi. Identitatea LCE a lui Yi Sang, de exemplu, îl înfățișează cu ramuri răsărind din cap. Sprite-ul său de evadare arată, de asemenea, că este posibil chiar să-ți schimbi complet forma în armonie cu Abnormitatea.</p>
+                    <p class="art-text" style="padding-left: 15px;">Cu toate acestea, reglarea nivelului de sincronizare cu E.G.O. LCE nu indică faptul că utilizatorul are control total, deoarece efectele Coroziunii E.G.O sunt inevitabile. În general, o rată mai mare de acordaj va face pe cineva mai susceptibil la efectele Coroziunii.</p>
+
+                    <p id="EGO-CORR" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Coroziunea E.G.O.-ului</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">E.G.O.-ul împrumutat de la o Abnormitate prezintă un mare dezavantaj: posibilitatea de a-ți pierde sinele în favoarea echipamentului. Acest fenomen este cunoscut drept Coroziunea E.G.O. (coreeană: E.G.O 침식, E.G.O chimsik), unde înfățișarea și comportamentul utilizatorului se transformă pentru a reflecta personalitatea și natura distructivă a Abnormității din care provine E.G.O.-ul.</p>
+                    <p class="art-text" style="padding-left: 15px;">Deși sincronizarea dintre E.G.O. și utilizatorul său reprezintă avantajul-cheie al E.G.O.-ului față de alte echipamente din Oraș, aceasta permite totodată și ca E.G.O.-ul utilizatorului să fie suprascris de către echipament. Dacă nu are suficientă tărie mentală, acesta poate „fuziona” cu echipamentul în lipsa virtuților personale de Prudență, Fortitudine, Cumpătare sau Justiție, necesare pentru a împiedica metamorfoza.</p>
+                    <p class="art-text" style="padding-left: 15px;">În timpul utilizării E.G.O.-ului, individul va auzi vocea Abnormității din care acesta provine. A „coroda” înseamnă a permite acelei voci și mentalități să preia controlul, înlocuind ego-ul utilizatorului cu al său. Odată cu pierderea sinelui, coroziunea provoacă în cele din urmă o transformare fizică. Aceasta își transformă victimele în creaturi asemănătoare Distorsiunilor.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Crawling_Inquisitor_StandingSprite.webp" width="360px" height="200px">
+                        <p style="text-align: center;">Inchizitor al Corporației N Corodat</p>
+                    </div>
+                    <p class="art-text" style="padding-left: 15px;">Totuși, Coroziunea E.G.O. nu este întotdeauna un proces brusc și drastic, așa cum se întâmplă când Păcătoșii corodează în lupte. Coroziunea E.G.O. poate consta și în schimbări subtile, relativ inofensive ale personalității utilizatorului, care apar în timp. În realitate, „coroziunea completă” prin intermediul echipamentului E.G.O. este adesea un proces de lungă durată. Aceste cazuri pot fi combătute ușor prin îndepărtarea echipamentului E.G.O., sau în cazul E.G.O.-ului LCE, prin reducerea nivelului de acordaj. Viteza cu care cineva își pierde sinele în fața echipamentului E.G.O. depinde în mare măsură de nivelul său de rațiune și stres, fiind considerabil mai susceptibil să fie suprascris de E.G.O.-ul Abnormității în circumstanțe în care nu-și poate menține echilibrul mental.</p>
+                    <p class="art-text" style="padding-left: 15px;">Coroziunea E.G.O. este prezentată în joc, unde Păcătoșii pot coroda în urma utilizării repetate a E.G.O.-urilor provenite de la Abnormități sau când ating niveluri scăzute de Rațiune. Canto-ul III demonstrează de asemenea rezultatul coroziunii voluntare a mai multor membri ai Inchiziției Corporației N.</p>
                 </div>
-                <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cine este dezvoltatorul acestui site?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Detaliu menționat în primul paragraf, dar, probabil, vă gândiți la ceva mai specific.</p>
-                    <p style="font-size: 24px; text-align: center;">Eu, Hațegan Bogdan, sunt un elev de clasa a 12-a din România (duh), care aspiră la un loc de muncă în domeniul programării web. În momentul de față încerc să învăț CSS și Javascript, și să implementez în acest site tot ceea ce pot pentru a definitiva aceste cunoștiințe. De asemenea, fac videoclipuri pe platforma YouTube sub numele "BoBo", videoclipurile respective pot varia de la let's play-uri, la tier list-uri, recenzii, unboxing-uri și chiar vlog-uri. Pe acest canal îmi postez și isprăviile în domeniul muzicii, făcând muzică sub numele "Oraculum", nume utilizat pentru toate isprăviile mele creative care includ muzică, povești și poezie.</p>
+
+                <div class="info" id="EGO-MAN">
+                    <p class="subtitle">E.G.O. Manifestat</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr)">
+                    <p class="art-text">Acest termen se referă la E.G.O-ul care este manifestat personal și mânuit de către același individ, care a devenit asociat cu Fenomenul Distorsiunii urmând Nopțile Albe și Zilele Întunecate.</p>
+                    <p id="EGO-MAN-ORG" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Origini</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Manifestarea unui E.G.O. era posibilă chiar și înainte de Nopțile Albe și Zilele Întunecate. Totuși, era un fenomen atât de rar încât chiar și Arbitrii Capului nu erau familiarizați cu modul în care funcționa.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/RedMistCombatIdle.webp" width="360px" height="200px">
+                        <p style="text-align: center;">Kali utilizându-și E.G.O.-ul</p>
+                    </div>
+                    <p class="art-text" style="padding-left: 15px;">Pe cât de specială era, Kali, cunoscută și sub numele „Ceață Roșie”, a fost atât prima utilizatoare cunoscută al unui E.G.O. extras dintr-o Abnormitate, cât și al unui E.G.O. manifestat personal. E.G.O.-ul extras de la o Abnormitate, pe care l-a primit de la Carmen, a fost un prototip al Sabiei Mimicry. Utilizarea îndelungată a E.G.O.-ului a pus-o, în cele din urmă, într-un risc ridicat de a suferi coroziunea E.G.O.-ului. Când Kali a reușit să respingă coroziunea, extinzându-și ego-ul asupra sabiei în loc să permită contrariul, astfel aceasta și-a manifestat propriul E.G.O. sub forma unei armuri negre complete, cu accente roșii strălucitoare. Mânuirea acestor două tipuri de E.G.O., anterior mai mult sau mai puțin necunoscute în Oraș, i-a permis Ceții Roșii să se confrunte cu succes cu Capul în timpul atacului asupra laboratorului lui Carmen. Nu există alte cazuri explicite de manifestare a unui E.G.O. înainte de Nopțile Albe și Zilele Întunecate.</p>
+                    <p class="art-text" style="padding-left: 15px;">Library of Ruina explică faptul că Proiectul Sămânța Luminii al Corporației Lobotomy avea scopul de a permite tuturor cetățenilor Orașului să își manifeste propriul E.G.O. Ideea era să devină un lucru accesibil pentru toți, și nu doar pentru un număr restrâns de indivizi precum Kali. În teorie, acest lucru ar fi oferit cetățenilor un mijloc real de a se proteja, eliminând morțile fără sens din Oraș. Totuși, decizia Angelei de a lua Lumina pentru ea însăși și consecințele ulterioare au împiedicat realizarea acestui plan.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Carmen și Ayin au devenit una cu Lumina nu cu mult timp înainte de aceste evenimente. Poziția lui Carmen în cadrul Luminii îi permitea să vegheze asupra Orașului (și a tuturor versiunilor acestuia din diferite Lumi-Oglindă) și să domine atât fenomenul E.G.O., cât și pe cel al Distorsiunii. În cele din urmă, ea a ales să îmbrățișeze Distorsiunile ca formă ideală a umanității și a încercat să distorsioneze locuitorii Orașului cu mâna ei. Astfel, după Nopțile Albe și Zilele Întunecate, manifestarea unui E.G.O. complet a devenit o chestiune de a respinge tentațiile lui Carmen.</p>
+
+                    <p id="EGO-MAN-FUNC" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Funcții</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">E.G.O.-ul manifestat este distinct și personal fiecărui individ. În timp ce E.G.O.-ul extras dintr-o Abnormitate va reflecta ego-ul Abnormității respective, E.G.O.-ul manifestat de către o persoană va corespunde propriului ego. Drept urmare, acestea variază foarte mult atât în aspect, cât și în funcționalitate. În general, E.G.O.-ul manifestat ia forma unui tip de armură, armă sau ambele. Acesta completează individul în loc să-l acapareze.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Dongbaek_Spicebush_StandingSprite.webp" width="290px" height="290px">
+                        <p style="text-align: center;">Dongbaek utilizându-și propriul E.G.O.</p>
+                    </div>
+                    <p class="art-text" style="padding-left: 15px;">La fel ca și cealaltă formă de E.G.O., E.G.O.-ul manifestat este extrem de puternic. Totuși, el reprezintă familiaritatea și dominația asupra propriului ego, în locul împrumutării ego-ului altcuiva. De asemenea, odată ce cineva a manifestat un E.G.O., îl poate manifesta din nou în orice moment, prin voință. Kali descrie faptul că a trebuit să se „obișnuiască” treptat cu E.G.O.-ul ei manifestat, învățând cum să îl folosească pentru perioade mai lungi și să-i scoată la iveală întreaga putere.</p>
+                    <p class="art-text" style="padding-left: 15px;">Există câteva excepții notabile față de tiparul obișnuit de armă/armură. De exemplu, este posibil să se manifeste clădiri întregi: E.G.O.-ul Angelei fiind Biblioteca, iar al lui YuRia fiind atelierul său.</p>
+                    <p class="art-text" style="padding-left: 15px;">Odată ce cineva a reușit să manifeste un E.G.O., câștigă imunitate împotriva Fenomenului Distorsiunii. Totuși, dacă manifestarea E.G.O.-ului este incompletă sau de tip Volatil (așa cum s-a întâmplat în cazul lui Philip), utilizatorul rămâne vulnerabil în fața distorsionării.</p>
+                    <p class="art-text" style="padding-left: 15px;">Dacă utilizatorul suferă o decădere nervoasă în timp ce are E.G.O.-ul manifestat, E.G.O.-ul manifestat poate să se disipeze odată voința slăbită a utilizatorului, așa cum s-a întâmplat cu Dongbaek.</p>
+
+                    <p id="EGO-MAN-DIST" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Manifestare & Diferențe față de Distorsiuni</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Deși manifestarea E.G.O.-ului era posibilă chiar și înainte de eveniment, în urma Nopților Albe și Zilelor Întunecate, E.G.O.-ul a devenit intrinsec legat de Fenomenul Distorsiunii. Ambele fenomene necesită același cadru: un eveniment care zdruncină realitatea unei persoane, ducând la o emoție intensă, urmat de o vizită din partea lui Carmen. Totuși, în timp ce Distorsiunile se formează atunci când ținta este de acord cu vorbele lui Carmen, E.G.O.-ul se manifestă prin negarea acestora. Astfel, linia dintre distorsionare și manifestarea E.G.O.-ului este una subțire, asemenea mersului pe sârmă. Cu toate acestea, nu este la fel de ușor să ajungi de ambele părți. Rezultatul este considerabil înclinat în favoarea distorsionării, având în vedere că persoana se află într-o stare mentală fragilă și este convinsă constant de Carmen. Nu este o realizare ușoară să respingi cuvintele ei mângâietoare și să-ți manifești propriul E.G.O.</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Dongrang_Farmwatch_StandingSprite.webp" width="270px" height="270px">
+                        <p style="text-align: center;">Dongrang utilizându-și propriul E.G.O.</p>
+                    </div>
+                    <p class="art-text" style="padding-left: 15px;">Deși Distorsiunile sunt asociate în general cu intenții antagonice, iar E.G.O.-ul cu intenții eroice, nu există o regulă clară în acest sens. Dongrang, de exemplu, și-a manifestat E.G.O.-ul pe baza dorinței de a-l ucide pe Yi Sang și de a distruge tot ce îl ancora în trecut. Ceea ce conta era faptul că Carmen îi spunea că nu are rost, iar Dongrang nu era de acord cu asta.</p>
+                    <p class="art-text" style="padding-left: 15px;">În plus, Distorsiunile reprezintă transformări complete din starea umană, în timp ce E.G.O.-ul ia forma a ceva separat. Cel mai frecvent este vorba despre un tip de armură și/sau armă pe care persoana o poate folosi.</p>
+                    <p class="art-text" style="padding-left: 15px;">Odată ce cineva reușește să manifeste E.G.O.-ul, acesta dobândește imunitate față de Fenomenul Distorsiunii. Totuși, manifestarea unui E.G.O. incomplet sau Volatil (așa cum este cazul lui Philip) nu oferă protecție completă, iar utilizatorul poate totuși ajunge să se distorsioneze.</p>
+
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/FeatherShield.webp" width="240px" height="180px">
+                        <p style="text-align: center;">Philip utilizându-și E.G.O.-ul Volatil</p>
+                    </div>
+                    <p id="EGO-MAN-VOL" class="art-text" style="padding-left: 15px; text-decoration: underline 2px var(--second-text-clr);">E.G.O. Volatil</p>
+
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Este de asemenea posibilă manifestarea parțială a unui E.G.O., acest tip de E.G.O. poartă numele de E.G.O. Volatil.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">E.G.O.-ul Volatil este manifestat odată cu respingerea lui Carmen, care este totuși lipsită de devotament, și care permite ezitarea. Manifestarea E.G.O.-ului Volatil nu se pune drept o manifestare propriu-zisă, întrucât nu oferă utilizatorului imunitate față de Fenomenul Distorsiunii precum un E.G.O. manifestat complet.</p>          
+                </div>
+
+                <div class="info" id="EGO-SIN">
+                    <p class="subtitle">E.G.O.-urile Păcătoșilor</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1" style="margin-bottom: 0;">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Suddenly,_One_Day_Gregor.webp" width="200px" height="190px">
+                        <p style="text-align: center;">E.G.O.-ul „inițial” al lui Gregor</p>
+                    </div>
+                    <p class="art-text">Păcătoșii utilizează în mod principal E.G.O.-uri Abnormităților. Totuși, E.G.O.-urile lor „inițiale” (precum „Suddenly, One Day” al lui Gregor) sunt de origini incerte, iar, datorită numelor unice, acestea cel mai probabil nu au fost extrase din Abnormități precum celălalte E.G.O.-uri utilizate de aceștia.</p>
+                    <p class="art-text">Asemenea E.G.O.-urilor Volatile, aceste E.G.O.-uri unice nu ofera imunitate împotriva Fenomenului Distorsiunii, fapt demonstrat în Canto-ul VI.</p>
+                </div>
+
+                <div class="info" id="UTIL-EGO-ABNO">
+                    <p class="subtitle">Utilizatori de E.G.O. al Abnormităților</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Lobotomy Corporation</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Angajații Corporației L (diverse)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Gebura (Prototipul Sabiei Mimicry, altele)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Limbus Company</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Marile (E.G.O. Lobotomy::Red Sheet)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Dongbaek (E.G.O. Lobotomy::Sunshower)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Camille (E.G.O. Lobotomy::Yearning-Mircalla Corodat)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Paula (E.G.O. Lobotomy::Yearning-Mircalla Corodat)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Hohenheim (E.G.O. LCE::AEDD)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Alyssa (E.G.O. LCE::Ardor Blossom Star)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Marton (E.G.O. LCE::Lantern)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Johann (E.G.O. Lobotomy neclar, posibil la Abnormității Queen Bee)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info" id="UTIL-EGO-MAN">
+                    <p class="subtitle">Utilizatori de E.G.O. Manifestat</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Lobotomy Corporation</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Gebura (nume necunoscut)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Library of Ruina</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Angela (Biblioteca)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Xiao (nume necunoscut)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Philip (E.G.O. Volatil::Waxen Pinion)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Distortion Detective</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Moses (nume necunoscut)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            YuRia (YuRia Atelier)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Ezra (E.G.O. Volatil, nume necunoscut)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Limbus Company</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Vergilius (nume necunoscut)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Dongbaek (E.G.O. Manifestat::Spicebush)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Dongrang (E.G.O. Manifestat::Farmwatch)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Ahab (E.G.O. Manifestat::GasHarpoon)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>

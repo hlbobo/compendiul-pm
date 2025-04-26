@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
-        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -22,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -68,7 +68,7 @@
                         <ul class="submenu">
                             <div>
                                 <li>
-                                    <a class="active" href="wonderlab.html">
+                                    <a href="wonderlab.html">
                                         <span>Wonderlab</span>
                                     </a>
                                 </li>
@@ -92,18 +92,38 @@
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
 
         <main>
             <div class="container">
@@ -111,23 +131,23 @@
                     <p class="title">Mahalalele</p>
                     <p class="subtitle" style="padding-top: 50px;">Date generale</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Mahalalele sunt regiunile periculoase ale fiecărui District din Oraș, servind drept alternative de clasă inferioară pentru Cuiburi. Acestea sunt locuri mortale și dominate de criminalitate din cauza nivelului ridicat de sărăcie și a lipsei de protecție din partea Aripilor corespunzătoare, fiind în schimb guvernate și controlate de Cele Cinci Degete.</p>
+                    <p class="art-text">Mahalalele sunt regiunile periculoase ale fiecărui District din Oraș, servind drept alternative de clasă inferioară pentru Cuiburi. Acestea sunt locuri mortale și dominate de criminalitate din cauza nivelului ridicat de sărăcie și a lipsei de protecție din partea Aripilor corespunzătoare, fiind în schimb guvernate și controlate de Cele Cinci Degete.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Descriere</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
                     <div id="imag1">
-                        <img src="Imagini/Restul site-ului/MISC/The_Backstreets.png" width="320px" height="200px">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/The_Backstreets.webp" width="320px" height="200px">
                         <p style="text-align: center;">Mahalalele observate în recepția Șobolanilor</p>
                     </div>
-                    <p id="imgtext" style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Fiecare District conține Mahalale, separate de Cuibul acelui district. O Aripă tinde să aibă extrem de puțină influență asupra Mahalalelor sale, lăsând  locuitorii să se descurce pe cont propriu. Nivelul de cooperare dintre o Aripă și Mahalale poate varia, dar, în cele din urmă, rămâne tot o relație de exploatare. La fel ca și Cuiburile, fiecare set de Mahalale are propria cultură și stil social, în funcție de Districtul de care aparține. Orașul impune și anumite „tabuuri” fiecărei Mahalale, iar încălcarea acestora poate duce la o pedeapsă potențial letală. Aceste caracteristici pot duce la medii extrem de diferite, cum ar fi Mahalalele Districtului 23, cunoscute pentru ororile sale.</p>
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Sindicatele și Birourile Săgeților își desfășoară cel mai adesea activitatea în Mahalale, iar Cele Cinci Degete sunt principala forță care le face aproape intangibile chiar și pentru Aripi, Gheară, Ochi sau Cap. Totuși, nu toți locuitorii Mahalalelor sunt lipsiți de scrupule și cruzi; există cazuri de patrule de cartier, forțe de menținere a păcii și chiar Asociația Zwei care încearcă să mențină un anumit nivel de politețe.</p>
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Aceste gropi mizere servesc, în cele din urmă, unui scop clar: locuitorii Mahalalelor sunt motivați să muncească din greu pentru a putea, într-o zi, să se mute într-un Cuib, iar locuitorii Cuiburilor sunt motivați să continue să muncească din greu pentru a nu ajunge aruncați în Mahalale.</p>
+                    <p class="art-text">Fiecare District conține Mahalale, separate de Cuibul acelui district. O Aripă tinde să aibă extrem de puțină influență asupra Mahalalelor sale, lăsând  locuitorii să se descurce pe cont propriu. Nivelul de cooperare dintre o Aripă și Mahalale poate varia, dar, în cele din urmă, rămâne tot o relație de exploatare. La fel ca și Cuiburile, fiecare set de Mahalale are propria cultură și stil social, în funcție de Districtul de care aparține. Orașul impune și anumite „tabuuri” fiecărei Mahalale, iar încălcarea acestora poate duce la o pedeapsă potențial letală. Aceste caracteristici pot duce la medii extrem de diferite, cum ar fi Mahalalele Districtului 23, cunoscute pentru ororile sale.</p>
+                    <p class="art-text">Sindicatele și Birourile Săgeților își desfășoară cel mai adesea activitatea în Mahalale, iar Cele Cinci Degete sunt principala forță care le face aproape intangibile chiar și pentru Aripi, Gheară, Ochi sau Cap. Totuși, nu toți locuitorii Mahalalelor sunt lipsiți de scrupule și cruzi; există cazuri de patrule de cartier, forțe de menținere a păcii și chiar Asociația Zwei care încearcă să mențină un anumit nivel de politețe.</p>
+                    <p class="art-text">Aceste gropi mizere servesc, în cele din urmă, unui scop clar: locuitorii Mahalalelor sunt motivați să muncească din greu pentru a putea, într-o zi, să se mute într-un Cuib, iar locuitorii Cuiburilor sunt motivați să continue să muncească din greu pentru a nu ajunge aruncați în Mahalale.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">„Noaptea în Mahalale”</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">În fiecare noapte, între orele 3:13 și 4:34, are loc „Noaptea în Mahalale”, un interval de timp în care niciun fel de lege nu se aplică și orice crimă este permisă. Singure acțiuni interzise sunt înregistrarea video a evenimentelor întâmplate în acest interval și provocarea de daune într-o clădire rezidențială, inclusiv invazia domiciliului sau vandalismul. Drept urmare, majoritatea oamenilor rămân închiși în case pentru a evita entități și grupuri periculoase precum Măturătorii.</p>
+                    <p class="art-text">În fiecare noapte, între orele 3:13 și 4:34, are loc „Noaptea în Mahalale”, un interval de timp în care niciun fel de lege nu se aplică și orice crimă este permisă. Singure acțiuni interzise sunt înregistrarea video a evenimentelor întâmplate în acest interval și provocarea de daune într-o clădire rezidențială, inclusiv invazia domiciliului sau vandalismul. Drept urmare, majoritatea oamenilor rămân închiși în case pentru a evita entități și grupuri periculoase precum Măturătorii.</p>
                 </div>
             </div>
         </main>

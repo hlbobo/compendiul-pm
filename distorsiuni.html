@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -21,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -85,83 +86,351 @@
                         </ul>
                     </li>
                     <li>
-                        <button onclick="togglesubmenu(this)" class="dropdown">
-                            <a href="univershub.html" style="padding: 0;"><span style="margin: 0; padding: 0;">Univers</span></a>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-                        </button>
-                        <ul class="submenu">
-                            <div>
-                                <li>
-                                    <a href="orasul.html">
-                                        <span>Orașul</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="ego.html">
-                                        <span>E.G.O</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="active" href="distorsii.html">
-                                        <span>Distorsii</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="abnos.html">
-                                        <span>Abnormalități</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lobcorpcom.html">
-                                        <span>Lobotomy Corporation (Compania)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="libraria.html">
-                                        <span>Librăria</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lcbc.html">
-                                        <span>Limbus Company (Compania)</span>
-                                    </a>
-                                </li>
-                            </div>
-                        </ul>
+                        <a href="univershub.html">
+                            <span>Univers</span>
+                        </a>
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+                
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
+        
         <main>
             <div class="container">
-                <div class="image">
-                    <img src="Imagini/logos/logo real real.png" width="450px" height="450px" style="z-index: 8;" />
-                    <
-                </div>
                 <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Ce este "Compendiul Project Moon"?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Compendiul Project Moon este un proiect independent, nesusținut oficial de către Project Moon, realizat de către Hațegan Bogdan (a.k.a. BoBo) cu scopul de a colecționa, traduce și prezenta într-un mod digerabil și ușor de înțeles informațiile despre jocurile, cărțile, cât și despre universul narativ creat de către studioul Coreean Project Moon pentru fanii acestora vorbitori de limba română.</p>
+                    <p class="title">Distorsiuni</p>
+                    <p class="subtitle" style="padding-top: 50px;">Introducere</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr); width: 79%;">
+                    <div id="imag1" style="margin-bottom: 0;">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Kromer_Distortion_StandingSprite.webp" width="305px" height="260px">
+                        <p style="text-align: center;">Kromer Distorsionată</p>
+                    </div>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Ezra-Distort.webp" width="340px" height="200px">
+                        <p style="text-align: center;">Ezra Distorsionată</p>
+                    </div>
+                    <p class="art-text">Distorsiunile (coreeană: 뒤틀림, Dwiteullim) sunt entități monstruoase și puternice din Oraș. Acestea sunt foști oameni care au fost copleșiți de propriile emoții, de obicei, după ce au cedat psihic din cauza unui eveniment ce le-a schimbat percepția asupra lumii și a vieții și s-au lăsat ademeniți de vorbele rostite de o voce pe care doar ei o pot auzi. Procesul prin care oamenii se distorsionează este cunoscut drept Fenomenul Distorsiunii.</p>
+                    <p class="art-text">Nu a fost făcut niciun anunț oficial privind Distorsiunile pentru publicul larg, iar cetățeanul obișnuit al Orașului are o înțelegere superficială a modului în care acestea funcționează.</p>
+                    <p class="art-text">În contextul jocului Limbus Company, Fenomenul Distorsiunii a început recent să devină o afacere de nișă, fiind clar că un scop secundar al Companiei este acela de a procura și cerceta indivizi distorsionați prin departamentul LCD (Limbus Company Distortion), în parteneriat cu echipa de Detectivi ai Distorsiunilor.</p>
+                    <table class="cuprins" style="text-align: left; font-size: 18px; width: 270px;">
+                        <tr><th style="text-align: center;">Cuprins</th></tr>
+                        <tr><td><a href="#Generalități">1. Generalități</a></td></tr>
+                        <tr><td><a href="#Origini">2. Origini</a></td></tr>
+                        <tr><td><a href="#Pianistul">3. Pianistul</a></td></tr>
+                        <tr><td><a href="#Distort">4. Detalii despre Fenomenul Distorsiunii</a></td></tr>
+                        <tr><td><a href="#Distort-Req" style="margin-left: 15px;">4.1. Necesități pentru Distorsionare</a></td></tr>
+                        <tr><td><a href="#Distort-Proces" style="margin-left: 15px;">4.2. Procesul de Distorsionare</a></td></tr>
+                        <tr><td><a href="#Diferențe-EGO" style="margin-left: 15px;">4.3. Diferențe față de E.G.O Manifestat</a></td></tr>
+                        <tr><td><a href="#Diferențe-Abnos" style="margin-left: 15px;">4.4. Diferențe față de Abnormități</a></td></tr>
+                        <tr><td><a href="#Diferențe-Peccat" style="margin-left: 15px;">4.5. Diferențe față de Peccatula</a></td></tr>
+                        <tr><td><a href="#Distrugere-Dist" style="margin-left: 15px;">4.6. Destrămarea Distorsiunii</a></td></tr>
+                        <tr><td><a href="#Monolitele">5. Monolitele</a></td></tr>
+                        <tr><td><a href="#Evaluare">6. Grade de Evaluare</a></td></tr>
+                        <tr><td><a href="#Evaluare-Clas" style="margin-left: 15px;">6.1. Niveluri de risc și Clasificări</a></td></tr>
+                        <tr><td><a href="#Distort-Attempt">7. Distorsiuni Notabile</a></td></tr>
+                    </table>
                 </div>
-                <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cât de frecvent vor fi actualizate informațiile de pe acest site?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Voi încerca să actualizez informațiile de pe acest site cât se poate de curând după lansarea unor informații noi și relevante, însă datorită faptului că acest proiect este unul independent, nesusținut oficial de către Project Moon, faptului că nu există o traducere oficială în limba română pentru proiectele realizate de către Project Moon (însemând că eu trebuie să mă ocup de culegerea informațiilor, traducerea acestora și inserarea acestora într-o manieră plăcută în acest site), cât și din cauza faptului că în momentul curent încă sunt elev/student, s-ar putea să existe diverse întârzieri în ceea ce privește acest subiect.</p>
+
+                <div class="info" id="Generalități">
+                    <p class="subtitle">Generalități</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p class="art-text">Potrivit lui Moses, o Săgeată care acționează sub titul de „Detectiv al Distorsiunilor”, Distorsiunea este asemănătoare cu o boală care se incubează lent în fiecare locuitor al Orașului. Chiar și înainte ca o persoană să se distorsioneze complet, aceasta prezintă semne invizibile ale Distorsiunii, perceptibile doar de către ea, iar singurii care sunt complet lipsiți de asemenea semne sunt cei care reușesc să-și controleze emoțiile și să manifeste E.G.O. cu succes (precum Moses însăși).</p>
+                    <p class="art-text">Deși majoritatea Distorsiunilor nu mai păstrează nicio urmă de umanitate și se manifestă doar pentru „a-și revendica și exprima dorințele [unidimensional]”, în anumite cazuri un individ reușește să își păstreze pe deplin rațiunea după Distorsiune — deși acest lucru îi face, de obicei, mai periculoși, deoarece pot planifica și acționa strategic în urmărirea dorințelor lor. Mai mult, unele Distorsiuni posedă abilitatea de a-i manipula fizic pe cei din jur, fie distorsionându-i și pe aceștia, fie transformându-i în alte forme.</p>
+                    <p class="art-text">Este posibilă, de asemenea, „rezolvarea” sau inversarea unei Distorsiuni, indiferent de cât de avansată este, prin acceptarea propriilor emoții (într-un mod pe care Moses îl compară cu medierea relațiilor umane), deși acest lucru nu garantează că persoana nu se va distorsiona din nou. În cele din urmă, totul depinde de individ și de capacitatea acestuia de a-și stăpâni propriile emoții.</p>
+                    <p class="art-text">Procesul și manifestarea Distorsiunii diferă de la o persoană la alta, în funcție de experiențele și dorințele proprii, deși există anumite similarități bazate pe emoții specifice (cum ar fi electricitatea ca semn al nevrozei). Totuși, există un element comun tuturor celor care se distorsionează: vocea unei femei pe care doar ei o pot auzi, care vorbește cu ei, îi face să cedeze psihic și îi încurajează să își urmărească cu orice scop dorințele. Această voce, descrisă ca fiind frumoasă și nepământeană, este de fapt a lui Carmen, care a ajuns să regrete sacrificiul făcut și a ales să își folosească prezența în Lumină pentru a-i încuraja pe ceilalți să se accepte și să se iubească așa cum sunt, cu tot cu defecte și dorințe, cauzând astfel Fenomenul Distorsiunii.</p>
                 </div>
-                <div class="info">
-                    <p style="color: #FFEF23; font-size: 46px; text-align: center;">Cine este dezvoltatorul acestui site?</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: center;">Detaliu menționat în primul paragraf, dar, probabil, vă gândiți la ceva mai specific.</p>
-                    <p style="font-size: 24px; text-align: center;">Eu, Hațegan Bogdan, sunt un elev de clasa a 12-a din România (duh), care aspiră la un loc de muncă în domeniul programării web. În momentul de față încerc să învăț CSS și Javascript, și să implementez în acest site tot ceea ce pot pentru a definitiva aceste cunoștiințe. De asemenea, fac videoclipuri pe platforma YouTube sub numele "BoBo", videoclipurile respective pot varia de la let's play-uri, la tier list-uri, recenzii, unboxing-uri și chiar vlog-uri. Pe acest canal îmi postez și isprăviile în domeniul muzicii, făcând muzică sub numele "Oraculum", nume utilizat pentru toate isprăviile mele creative care includ muzică, povești și poezie.</p>
+
+                <div class="info" id="Origini">
+                    <p class="subtitle">Origini</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p class="art-text">Fenomenul Distorsiunii a apărut ca rezultat al Nopților Albe și Zilelor Întunecate, o tentativă de a răspândi Lumina în tot Orașul, care a fost întreruptă prematur. Planul – cunoscut sub numele de proiectul Sămânța Luminii – a fost un proiect condus de Carmen și, ulterior, de Ayin, având ca scop vindecarea „Bolii Minții” prezentă în toți locuitorii Orașului. În Leviathan este puternic sugerat faptul că scopul final al lui Carmen era cel de a permite oamenilor să-și dezvăluie sinele adevărat, fără influența judecății lumii, în timp ce asistentul ei, Ayin, credea că un astfel de concept ar trebui aplicat cu moderație și cu grijă față de ceilalți – similar cu modul în care purtătorii de E.G.O funcționează cu o intenție clară, spre deosebire de instinctul și emoțiile animalice ale unei Distorsiuni. Sprijinind convingerea lui Ayin, Angela afirmă că Lumina a fost răspândită cu intenția de a permite tuturor locuitorilor Orașului să-și manifeste propriul E.G.O și să se poată apăra.</p>
+                    <p class="art-text">Deși proiectul Sămânța Luminii necesita șapte zile pentru a-și atinge scopul, răspândirea Luminii a fost oprită după doar trei zile de către Inteligența Artificială a Facilității X-394 a Corporației L, Angela. Din cauza acestei răspândiri limitate, o „putere instabilă” a fost eliberată, „incubând alte posibilități”, ducând astfel la apariția Fenomenului Distorsiunii. Locuitorii Orașului puteau acum fie să se distorsioneze, fie să manifeste un E.G.O. atunci când ajungeau la un impas mental semnificativ, alegând fie să accepte, fie să respingă cuvintele lui Carmen.</p>
+                    <p class="art-text">Cei doi oameni din fruntea proiectului Sămânța Luminii, Carmen și Ayin, deveniseră una cu Lumina înainte de Nopțile Albe și Zilele Întunecate, ca parte a proiectului. Poziția lui Carmen în cadrul Luminii îi permitea să vegheze asupra Orașului (și a tuturor versiunilor sale din diferitele Lumi Oglindă) și să prezideze asupra fenomenelor de Distorsiune și E.G.O. .</p>
+                    <p class="art-text">Astfel, Carmen își folosea puterea din cadrul Luminii pentru a iniția Distorsiuni. Ea vâna oamenii în momentele lor cele mai dificile, printr-o conversație auzită doar de ținta sa. Este imposibil să se intervină într-o Distorsiune naturală, care „se produce de parcă ar fi fost predestinată”; alte persoane sunt chiar respinse fizic în timpul conversației respective.</p>
+                    <p class="art-text">Deși Angela a returnat majoritatea Luminii (aproape cele șapte zile întregi) către Oraș la finalul jocului Library of Ruina, acest lucru, însă, nu a atenuat Fenomenul Distorsiunii, deoarece Carmen a continuat să facă încercări deliberate de a distorsiona locuitorii Orașului. Acțiunile lui Carmen continuă să afecteze Orașul și în prezentul universului narativ.</p>
+                </div>
+
+                <div class="info" id="Pianistul">
+                    <p class="subtitle">Pianistul</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/The_Pianist.webp" width="380px" height="230px">
+                        <p style="text-align: center;">Pianistul</p>
+                    </div>
+                    <p class="art-text">Cu toate că Orașul a rămas în mare parte neștiutor față de existența Distorsiunilor urmărind evenimentele Nopților Albe și Zilelor Întunecate, acest lucru avea să se schimbe rapid după manifestarea Pianistului și a haosului rămas în urma acesteia. Făcându-și apariția în Mahalalele Districtului 9, Pianistul a devastat districtul și a cauzat moartea a peste 300,000 de oameni, devenind astfel primul și cel mai grav incident de Distorsiune pe scară largă. Acest incident a adus rapid Distorsiunile în față publicului, cu toate că majoritatea lumii rămâne încă necunoscătoare față de cazurile mai mici de Distorsiuni din Oraș. Cu toate acestea, puterea distructivă a Pianistului și a altor incidente similare, care au apărut fără vreun anume motiv, au determinat multe grupuri să înceapă să investigheze Fenomenul Distorsiunii, precum Asociația Zwei.</p>
+                </div>
+
+                <div class="info" id="Distort">
+                    <p class="subtitle">Detalii despre Fenomenul Distorsiunii</p>
+                    <hr style="margin-top: 10px; color: #FFEF23;">
+                    <p id="Distort-Req" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Necesități pentru Distorsionare</p>
+                    <p class="art-text" style="padding-left: 15px;">Oamenii din Oraș pot deveni ținte ale Distorsiunii, indiferent de statut sau locație. Totuși, acest lucru necesită o mentalitate deosebit de intensă și urmărirea cu toată inima a propriilor dorințe. Angela descrie persoanele cu potențial de a manifesta E.G.O. sau de a se distorsiona drept oameni „care se străduiesc să îndeplinească ceea ce își doresc sincer, nefiind opriți de niciun obstacol”.</p>
+                    <p class="art-text" style="padding-left: 15px;">Pentru a fi susceptibil la distorsiune, trebuie să aibă loc o „destrămare absolută a unei convingeri adânc înrădăcinate, în urma unui șoc personal masiv”. În această stare de emoție extrem de intensă, mintea „cedează”.</p>
+                    <p class="art-text" style="padding-left: 15px;">De exemplu, victimele Distorsiunii pot fi prezentate ca urmărind un scop semnificativ, care le definea viața, înainte de a realiza că acesta nu poate fi îndeplinit, din cauza unui eveniment brusc și dramatic.</p>
+                    
+                    <p id="Distort-Proces" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Procesul de Distorsionare</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Carmen-distort.webp" width="390px" height="240px">
+                        <p style="text-align: center;">Carmen, vocea din spatele Fenomenului Distorsiunii</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">A fi țintit de Fenomenul Distorsiunii înseamnă a fi abordat direct de către Carmen. Cineva care trece prin procesul de Distorsiune va auzi o voce caldă și ademenitoare, imposibil de auzit de altcineva. Acea voce îi va vorbi despre situația sa actuală și îl va împinge să cedeze sentimentelor intensificate, folosind cuvinte specifice menite să-l facă să se concentreze pe emoțiile sale negative.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Dacă ținta alege să accepte aceste sentimente, fiind de acord cu judecata lui Carmen asupra vieții sale, atunci „își dă consimțământul” și se distorsionează. Distorsiunea implică transformarea într-o ființă care reflectă sentimentele și dorințele finale ale persoanei. Dorințele mai puternice duc la o Distorsiune mai puternică.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Distorsiunile apar în toate formele și dimensiunile, având adesea un aspect animalic sau nepământesc, rareori păstrând rămășițe vizuale ale formei umane a individului distorsionat. Odată distorsionată, persoana este consumată de emoțiile negative care i-au fost amplificate, ajungând într-o măsură mai mică sau mai mare să le întruchipeze. Din acest motiv, multe Distorsiuni sunt violente, acționând pe baza unor sentimente precum furia sau disperarea.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Deși unele Distorsiuni nu pot fi convinse prin rațiune, acesta nu este cazul tuturor. În funcție de cauza distorsionării, multe Distorsiuni sunt capabile să se comporte calm sau să poarte conversații normale. Ele doar acordă prioritate acțiunii conform sentimentelor care le-au dus la distorsiune.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">După suficient timp, o Distorsiune se transformă într-o Abnormitate, acest proces fiind unul ireversibil.</p>
+                    
+                    <p id="Diferențe-EGO" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Diferențe față de E.G.O Manifestat</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Vergilius_EGO_Idle_Sprite.webp" width="290px" height="260px">
+                        <p style="text-align: center;">E.G.O.-ul Manifestat al lui Vergilius</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Deși manifestarea E.G.O.-ului era posibilă chiar și înainte de eveniment, în urma Nopților Albe și Zilelor Întunecate, E.G.O.-ul a devenit intrinsec legat de Fenomenul Distorsiunii. Ambele fenomene necesită același cadru: un eveniment care zdruncină realitatea unei persoane, ducând la o emoție intensă, urmat de o vizită din partea lui Carmen. Totuși, în timp ce Distorsiunile se formează atunci când ținta este de acord cu vorbele lui Carmen, E.G.O.-ul se manifestă prin negarea acestora. Astfel, linia dintre distorsionare și manifestarea E.G.O.-ului este una subțire, asemenea mersului pe sârmă. Cu toate acestea, nu este la fel de ușor să ajungi de ambele părți. Rezultatul este considerabil înclinat în favoarea distorsionării, având în vedere că persoana se află într-o stare mentală fragilă și este convinsă constant de Carmen. Nu este o realizare ușoară să respingi cuvintele ei mângâietoare și să-ți manifești propriul E.G.O.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Deși Distorsiunile sunt asociate în general cu intenții antagonice, iar E.G.O.-ul cu intenții eroice, nu există o regulă clară în acest sens. Dongrang, de exemplu, și-a manifestat E.G.O.-ul pe baza dorinței de a-l ucide pe Yi Sang și de a distruge tot ce îl ancora în trecut. Ceea ce conta era faptul că Carmen îi spunea că nu are rost, iar Dongrang nu era de acord cu asta.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">În plus, Distorsiunile reprezintă transformări complete din starea umană, în timp ce E.G.O.-ul ia forma a ceva separat. Cel mai frecvent este vorba despre un tip de armură și/sau armă pe care persoana o poate folosi.</p>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Odată ce cineva reușește să manifeste E.G.O.-ul, acesta dobândește imunitate față de Fenomenul Distorsiunii. Totuși, manifestarea unui E.G.O. incomplet sau Volatil (așa cum este cazul lui Philip) nu oferă protecție completă, iar utilizatorul poate totuși ajunge să se distorsioneze.</p>
+                    
+                    <p id="Diferențe-Abnos" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Diferențe față de Abnormități</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Ebony_Queen’s_Apple_Idle_Sprite.webp" width="250px" height="250px">
+                        <p style="text-align: center;">Ebony Queen's Apple, o Abnormitate</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Deși sunt foarte asemănătoare cu Abnormitățile, o diferență esențială între cele două este că Distorsiunile se manifestă în mod voit din dorințele formei originale (sau atunci când emoțiile depășesc dorința), în timp ce Abnormitățile sunt create în mare parte prin mijloace artificiale. Corporația L a format Abnormități prin utilizarea Fântânii, Găleții și Cogito, fără niciun acord conștient din partea persoanei implicate. Pe de altă parte, Distorsiunile iau naștere prin efectele adverse ale Luminii, permițând un acord între individ și Carmen.</p>
+                    <p class="art-text" style="padding-left: 15px;">Distorsiunile pot fi, de asemenea, ucise definitiv și nu revin temporar la o formă ovală, așa cum se întâmplă cu Abnormitățile. Este important de remarcat că Abnormitățile sunt doar fragmente ale minții extrase din subiecți vii, spre deosebire de Distorsiuni, care reprezintă întreaga persoană coruptă de propriile convingeri.</p>
+                    <p class="art-text" style="padding-left: 15px;">Cu toate acestea, Library of Ruina echivalează frecvent Distorsiunile și Abnormitățile. Angela afirmă că „Abnormitățile manifestate prin Distorsiune sunt euri care și-au pierdut controlul...”, în timp ce Binah îi spune lui Roland că „Acestea pot lua forma unui E.G.O. sau a unei Abnormități... fenomenul a fost numit acum Distorsiune.” Cu toate acestea, această perspectivă nu se păstrează în Limbus Company, unde cele două sunt tratate ca tipuri de ființe complet diferite, deși corelate între ele. În mini-episodul Niveluri de Risc și Clasificări, LCD afirmă că Abnormitățile și Distorsiunile sunt chiar atât de distincte încât necesită coduri de clasificare diferite.</p>
+                    <p class="art-text" style="padding-left: 15px;">Odată ce cineva reușește să manifeste E.G.O.-ul, acesta dobândește imunitate față de Fenomenul Distorsiunii. Totuși, manifestarea unui E.G.O. incomplet sau Volatil (așa cum este cazul lui Philip) nu oferă protecție completă, iar utilizatorul poate totuși ajunge să se distorsioneze.</p>
+                    
+                    <p class="art-text" style="padding-left: 15px; text-decoration: underline 2px var(--second-text-clr);">Distorsiunile devenind Abnormități</p>
+                    <p style="padding-top: 15px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Abnormitățile pot lua naștere și din fenomenul <a href="distorsiuni.html">Distorsiunii</a>, deoarece, odată cu trecerea timpului, Distorsiunile sunt garantate să „eclozeze” într-o Abnormitate. Hohenheim descrie acest proces astfel: „orice individualitate preexistentă este ștearsă, fiind înlocuită complet de o Abnormitate.” În acest punct al procesului, nu mai există nicio speranță pentru individul afectat, deoarece o Abnormitate nu mai poate reveni la normal, spre deosebire de o <a href="distorsiuni.html">Distorsiune</a>.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Până acum, a existat un singur caz confirmat al acestui fenomen, cel al lui Jumsoon în <a href="leviathan.html">Leviathan</a>. În acest caz, individul a rămas complet nemișcat și tăcut, înainte ca Schadenfreude să-l despice brusc și să iasă din corpul său. Interesant este că acest eveniment demonstrează că procesul poate duce la crearea unei a doua copii a unei Abnormități preexistente, contrazicând noțiunea stabilită conform căreia toate Abnormitățile sunt unice.</p>
+                    <p style="padding-top: 20px; padding-left: 25px; font-size: 26px; text-align: left; line-height: 26px;">Deși atât Hohenheim, cât și Ezra atribuie transformarea trecerii timpului, <a href="leviathan.html">Leviathan</a> sugerează, de asemenea, că <a href="distorsiuni.html">Distorsiunile</a> se pot transforma în Abnormități ca rezultat al unei a doua prăbușiri a fundației mentale a individului.</p>
+                    
+                    <p id="Diferențe-Peccat" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Diferențe față de Peccatula</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Peccatulum_Irae_Class_1_Idle_Sprite.webp" width="340px" height="190px">
+                        <p style="text-align: center;">Peccatulum Irae, un tip de Peccatula</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Peccatula sunt considerate originile și produsele secundare ale fenomenului Distorsiunii. La fel ca Abnormitățile, Peccatula sunt foarte asemănătoare cu Distorsiunile, dar reprezintă totuși un alt tip de entitate. Comportamentul Peccatula se aseamănă mai mult cu cel al bestiilor, fiind mult mai agresive decât Distorsiunile. Peccatula apar întotdeauna în șapte tipuri diferite (fiecare având cel puțin trei „evoluții”). În timp ce Distorsiunile sunt unice și reflectă ceva profund în inimile celor afectați, Peccatula, pe de altă parte, elimină complet individualitatea persoanei transformate. Singurul lucru care ar putea fi considerat un „rămas” al persoanei-transformate într-un Peccatulum este tipul de Peccatulum care devine, iar acest tip se bazează pe păcatul pe care l-au întruchipat în viața lor.</p>
+                    <p class="art-text" style="padding-left: 15px;">În mod specific, Peccatula apar atunci când cineva încearcă și „eșuează” să se distorsioneze. În prezent, nu se știe exact cum sau de ce cineva ar putea să eșueze în a se distorsiona. Totuși, cercetătorul LCE, Hohenheim crede că transformarea într-o Distorsiune sau într-un Peccatula este un simplu joc de noroc, cu o șansă egală de 50/50 pentru oricare dintre rezultate. Totuși, aceasta este în contextul Monolitului și nu este complet clar dacă teoria sa se aplică tuturor cazurilor de Distorsiune sau doar celor induse de Monolit.</p>
+                    
+                    <p id="Distrugere-Dist" style="padding-top: 20px; font-size: 32px; text-align: left; line-height: 28px; text-decoration: underline 2px var(--second-text-clr);">Destrămarea Distorsiunii</p>
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Heath-Distort_Over.webp" width="360px" height="200px">
+                        <p style="text-align: center;">Heathcliff ieșind din starea de Distorsiune</p>
+                    </div>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Distorsiunile nu reprezintă o stare permanentă de existență. Pentru a readuce o Distorsiune la statutul său uman, trebuie apelat la motivul pentru care aceasta s-a distorsionat inițial. Faust descrie procesul ca pe demontarea zidului pe care Distorsiunea l-a construit în jurul inimii sale, folosind metode pe care Distorsiunea le-ar aproba. Metoda trebuie să o convingă, într-un fel, că realitatea este diferită de ceea ce a dus-o la distorsionare.</p>
+                    <p class="art-text" style="padding-left: 15px;">Un om care și-a revenit din Distorsiune nu dobândește imunitate față de aceasta. În schimb, oamenii sunt capabili să se distorsioneze și să se restabilească de un număr infinit de ori. Totuși, faptul că cineva s-a distorsionat o dată nu înseamnă că va dobândi imunitate față de manifestarea E.G.O.-ului. Este complet posibil să te distorsionezi, să-ți revii la normal și apoi să îți manifești E.G.O.-ul.</p>
+                </div>
+
+                <div class="info" id="Monolitele">
+                    <p class="subtitle">Monolitele</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <div id="imag1">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/Limbus-Monolith.webp" width="260px" height="330px">
+                        <p style="text-align: center;">Monolitul din clădirea Yongjin</p>
+                    </div>
+                    <p class="art-text">Un Monolit este un artefact capabil să forțeze o persoană să se distorsioneze sau să se transforme într-un Peccatulum. Acesta are aspectul unei stele negre plate, de aproximativ doi metri înălțime. La fel ca Ramurile de Aur, Monolitele au început să apară recent în Oraș, răspândite prin mahalalele diferitelor Districte, atrăgând atenția celor Cinci Degete și a altor Sindicate, precum și a unui număr de Corporații. Limbus Company a început cercetarea asupra acestor artefacte și expedițiile de recuperare mult mai devreme decât alte facțiuni și firme, permițându-le să creeze un stoc mare, făcându-i principalii furnizori de Monolite din Oraș. În mod specific, departamentul LCA este cel care se ocupă cu recuperarea Monolitelor, după care acestea sunt transferate la Moses și echipa ei.</p>
+                    <p class="art-text">Crengile de Aur și Monolitele mai au și alte asemănări. La fel ca o Creangă, un Monolit amplifică și eliberează sentimente, spre deosebire de o Creangă totuși, Monolitul eliberează un "semnal" care determină în mod specific pe cineva să înfrunte emoțiile care fierb în mintea sa, forțându-l astfel să se distorsioneze. O Distorsiune cauzată de un Monolit este notată ca având diferențe față de o Distorsiune naturală, deoarece poate fi întreruptă de forțe externe, cum ar fi lovirea persoanei afectate. Cu toate acestea, se pare că vocea Distorsiunii este încă implicată în Distorsiunile induse de Monolit. Efectul unui Monolit poate, de asemenea, să transforme individul într-un Peccatulum. Cercetătorul Hohenheim descrie acest lucru ca fiind un simplu "joc de noroc", considerând că există o șansă de 50/50 de a deveni fie o Distorsiune, fie un Peccatulum.</p>
+                    <p class="art-text">În plus, spre deosebire de o Creangă, Monolitul este descris ca un dispozitiv presupus creat de oameni, cu un mecanism intern care poate fi pornit sau oprit. Dante descrie acest proces de "blocare" a Monolitului ca fiind actul de a trasa un traseu de lumină pe dispozitiv.</p>
+                    <p class="art-text">Monolitele sunt, de asemenea, parte din catalogul de achiziții Limbus Company. În noiembrie 984, directorul executiv al Corporației T, Hubert, a solicitat achiziționarea întregului stoc de Monolite al Companiei, ceea ce Faust a permis în cele din urmă.</p>
+                </div>
+
+                <div class="info" id="Evaluare">
+                    <p class="subtitle">Grade de Evaluare</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p id="Evaluare-Clas" style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline 2px var(--second-text-clr);">Niveluri de risc și Clasificări</p>
+                    <p class="art-text" style="padding-left: 15px;">Distorsiunile din Limbus Company au primit clasificări de bază privind Nivelul de Risc până la începutul Sezonului 4. În-univers, acestea au fost redactate pentru ca superiorii din Limbus Company să poată reface sistemul de clasificare, astfel încât să se deosebească de modul în care fosta Corporație L clasifica Abnormitățile și să reflecte mai fidel experiențele Păcătoșilor. Acest lucru a avut loc în cadrul actualizării din 11 aprilie 2024, intitulată „Risk Levels and Classifications”, și a fost o schimbare la nivel de server care a afectat toate conturile, indiferent de progresul în poveste. După această modificare, Nivelurile de Risc ale Distorsiunilor au fost etichetate fără discriminare ca Nedefinit (Undef.).</p>
+                    <p class="art-text" style="padding-left: 15px;">Totuși, clasificările Nivelului de Risc au fost reintroduse odată cu lansarea Intervallo-ului V-1: LCB Regular Check-up. Nivelurile de Risc se actualizează după finalizarea Intervallo-ului.</p>
+                    <p class="art-text" style="padding-left: 15px;">Clasificările actualizate constau în cinci indicatori diferiți (??-??-??-??-??).</p>
+                    <ul style="list-style: disc outside; margin-left: 60px;">
+                        <li style="padding-top: 15px; font-size: 26px; line-height: 29px; text-align: left;">
+                            <span style="color: var(--second-text-clr);">Primul (XX-??-??-??-??):</span> un nivel de risk de la ZAYIN la ALEPH, menit să descrie nivelul de devastare așteptat
+                        </li>
+                        <li style="padding-top: 15px; font-size: 26px; line-height: 29px; text-align: left;">
+                            <span style="color: var(--second-text-clr);">Al doilea (??-XX-??-??-??):</span> un număr de la 01 la 10, menit să descrie nivelul de devastare pentru nivelul de risc aferent
+                        </li>
+                        <li style="padding-top: 15px; font-size: 26px; line-height: 29px; text-align: left;">
+                            <span style="color: var(--second-text-clr);">Al treilea (??-??-XX-??-??):</span> o desemnare de două litere referitoare la afinitatea păcatului dominant al Distorsiunii (de exemplu: PI se referă la Pigritia, Lenea)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 26px; line-height: 29px; text-align: left;">
+                            <span style="color: var(--second-text-clr);">Al patrulea (??-??-??-XX-??):</span> o desemnare numerică indicând Districtul în care Distorsiunea a fost întâlnită
+                        </li>
+                        <li style="padding-top: 15px; font-size: 26px; line-height: 29px; text-align: left;">
+                            <span style="color: var(--second-text-clr);">Al cincilea (??-??-??-??-XX):</span> neclar/necunoscut
+                        </li>
+                    </ul>
+                    <p class="art-text" style="padding-top: 15px; padding-left: 15px;">Distorsiunile pot fi etichetate prescurtat doar prin Nivelul de Risc și Afinitatea Păcatului, de exemplu: HE-06(-PI), sau cu codul complet desemnat, de exemplu: HE-06-PI-20-01.</p>
+                    
+                </div>
+
+                <div class="info" id="Distort-Attempt">
+                    <p class="subtitle">Încercări de Distorsionare Notabile</p>
+                    <hr style="margin-top: 10px; color: var(--accent-clr);">
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Library of Ruina</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Pianistul (reușită, a murit ca Distorsiune)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Promisiunea de Ieri (Yesterday's Promise) (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            L'heure de Loup (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Noaptea Sângerie (reușită, manifestată după ce lumina a elibert-o din carte, statul de Bloodfiend fiind rezultatul unei alte entități)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Păpușarul (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Circul de ora 8 (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Philip (reușită, cedează în sentimentele E.G.O.-ului Volatil, devine Copii ce Plâng)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Al Optulea Chef  (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Muzicanții din Bremen (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Liderul Bisericii Roților Dințate (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Yan (reușită, devine 얀샋ㄷ요무)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Roland (reușită temporar, numită Tăcerea Neagră)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Conductorul (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Xiao (nereușită, a manifesta E.G.O.)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Wonderlab</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Cat (reușită, cedează după ce află că Directorul Facilității O-5681 a fost mort pentru multă vreme, devine O Petrecere Veșnică)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Distortion Detective</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Moses (nereușită, a manifestat E.G.O.)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Ezra (reușită temporar sub influența Monolitului)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            YuRia (nereușită, a manifestat E.G.O)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Fei Lei (reușită temporar)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Fotograful (reușită temporar)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Simularea (reușită, Distorsiune în masă găsită într-un liceu din Cuibul Corporației N)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Spălătoria Viselor (reușită, a o fost suprimată de Moses, Ezra și Vespa)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Trăznetul Uman (reușită, a o fost suprimată de Moses, Ezra și Vespa)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Lunetistul din Negură (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Larierre (reușită)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Rusk (reușită)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Leviathan</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Vergilius (nereușită, a manifestat E.G.O.)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Jumsoon (reușită, s-a transformat ulterior într-o copie a Abnormității Schadenfreude)
+                        </li>
+                    </ul>
+
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 26px;">Limbus Company</p>
+                    <ul style="list-style: disc outside; margin-left: 50px;">
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Kromer (reușită, moare ca Distorsiune)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Proprietarul Barului & Frigătoriei lui Eubong (reușită temporar, proprietarul și-a revenit la normal)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Dongbaek (nereușită, a manifestat E.G.O.)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Dongrang (reușită temporar, a manifestat E.G.O.)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Ahab (nereușită, a manifestat E.G.O.)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Bamboo-Hatted Kim (reușită temporar sub influența Monolitului, a revenit la normal)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Aeng-Du (nereușită, întreruptă în timpul influenței Monolitului)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Hindley (reușită, moare ca Distorisune)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Heathcliff (reușită temporar, a revenit la normal)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Spintecătorul Timpului (reușită, posibilă Distorsiune a unui grup, sub custodia Corporației T)
+                        </li>
+                        <li style="padding-top: 15px; font-size: 28px; line-height: 29px; text-align: left;">
+                            Hohenheim (reușită temporar sub influența Monolitului, a revenit la normal)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>

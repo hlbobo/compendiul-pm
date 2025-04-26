@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
-        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -22,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -92,18 +92,38 @@
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
 
         <main>
             <div class="container">
@@ -111,17 +131,17 @@
                     <p class="title">Orașul</p>
                     <p class="subtitle" style="padding-top: 50px;">Date generale</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Orașul (The City, 도시, Dosi) este un complex urban care servește drept principalul decor al universului Project Moon. Orașul are dimensiunea unei mici țări, conform unei hărți prezentate în forșpanurile Limbus Company, și este condus de Cap, fiind considerat ultima fortăreață cunoscută a umanității în acest univers.</p>
+                    <p class="art-text">Orașul (The City, 도시, Dosi) este un complex urban care servește drept principalul decor al universului Project Moon. Orașul are dimensiunea unei mici țări, conform unei hărți prezentate în forșpanurile Limbus Company, și este condus de Cap, fiind considerat ultima fortăreață cunoscută a umanității în acest univers.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Descriere</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
                     <div id="imag1">
-                        <img src="Imagini/Restul site-ului/MISC/City_map.jpg" width="390px" height="260px">
+                        <img src="Imagini/Restul site-ului/MISC/CGs & Sprites/City_map.webp" width="390px" height="260px">
                         <p style="text-align: center;">Harta Orașului</p>
                     </div>
-                    <p id="imgtext" style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Orașul este o metropolă vastă și dens populată, găzduind aproximativ 7 miliarde de oameni, conform trailer-ului Limbus Company. Acesta este împărțit în 26 de Districte, deși Districtul 26 nu este vizibil pe nicio hartă a orașului. Fiecare District este împărțit în două zone: Cuibul (Nest), condus de o Aripă (Wing), unde locuiesc clasele mijlocii și înalte (Săgeți de rang superior, angajați ai Aripilor etc.), numite Pene (Feathers), și Mahalalele (Backstreets), care adăpostesc restul populației.</p>
-                    <p style="padding-top: 20px; font-size: 26px; text-align: left; line-height: 26px;">Orașul este înconjurat de o regiune fără lege, marcată de sărăcie extremă și găzduitoare diversor tipuri de monștri (ex. Gnomi), cunoscută sub numele de Periferia (The Outskirts), care se intersectează cu Pădurea Neagră (The Black Forest) în regiunea de sud-vest a orașului. Dincolo de Periferie se află Ruinele (The Ruins), rămășițele abandonate și acoperite de vegetație ale lumii de dinainte, un loc unde nu există nicio formă de lege sau supraveghere.</p>
+                    <p class="art-text">Orașul este o metropolă vastă și dens populată, găzduind aproximativ 7 miliarde de oameni, conform trailer-ului Limbus Company. Acesta este împărțit în 26 de Districte, deși Districtul 26 nu este vizibil pe nicio hartă a orașului. Fiecare District este împărțit în două zone: Cuibul (Nest), condus de o Aripă (Wing), unde locuiesc clasele mijlocii și înalte (Săgeți de rang superior, angajați ai Aripilor etc.), numite Pene (Feathers), și Mahalalele (Backstreets), care adăpostesc restul populației.</p>
+                    <p class="art-text">Orașul este înconjurat de o regiune fără lege, marcată de sărăcie extremă și găzduitoare diversor tipuri de monștri (ex. Gnomi), cunoscută sub numele de Periferia (The Outskirts), care se intersectează cu Pădurea Neagră (The Black Forest) în regiunea de sud-vest a orașului. Dincolo de Periferie se află Ruinele (The Ruins), rămășițele abandonate și acoperite de vegetație ale lumii de dinainte, un loc unde nu există nicio formă de lege sau supraveghere.</p>
                 </div>
             </div>
         </main>

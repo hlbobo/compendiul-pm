@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
-        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -22,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -92,18 +92,38 @@
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
 
         <main>
             <div class="container">
@@ -112,35 +132,35 @@
                     <p class="subtitle" style="padding-top: 50px;">Date generale</p>
                     <hr style="margin-top: 10px; color: #FFEF23; width: 81%;">
                     <div id="imag1">
-                        <img src="Imagini/logos/Project_Moon_Logo.png" width="250px" height="270px">
+                        <img src="Imagini/logos/Project_Moon_Logo.webp" width="250px" height="270px">
                     </div>
-                    <p class="imgtext" style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Project Moon este un studio independent de jocuri stabilit în Koreea de Sud. Acesta a fost înființat în data de 18 Noiembrie 2016 de către Kim Ji-Hoon în timpul celui de al patrulea său an de facultate. Inițial compania a început cu 7 angajați, însă, în prezent, acest număr a crescut semnificativ, compania având 45 de angajați în cadrul studioului de jocuri și 7 angajați la restaurantul lor "HamHamPangPang".</p>
+                    <p class="art-text">Project Moon este un studio independent de jocuri stabilit în Koreea de Sud. Acesta a fost înființat în data de 18 Noiembrie 2016 de către Kim Ji-Hoon în timpul celui de al patrulea său an de facultate. Inițial compania a început cu 7 angajați, însă, în prezent, acest număr a crescut semnificativ, compania având 45 de angajați în cadrul studioului de jocuri și 7 angajați la restaurantul lor "HamHamPangPang".</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Istorie</p>
                     <hr style="margin-top: 10px; color: #FFEF23;">
-                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Project Moon a fost fondat de către dezvoltatorul Kim Ji-hoon, care avea o puternică pasiune pentru jocuri video, anime și literatură. A licențiat în Ingineria Calculatoarelor în căutare unui job în industria jocurilor video, intrând într-un club de dezvoltare a jocurilor video la Universitatea Asia, în cadrul căruia i-a înâlnit pe ceilalți membrii fondatori ai Project Moon. În al patrulea an de facultate, Kim Ji-hoon și Lee YuMi, au început să lucreze la <a href="lobcorp.html">Lobotomy Corporation</a>. Jocul a fost inspirat de către creații precum Fundația SCP, Cabana din Pădure (Drew Goddard - 2012), Depozitul 13 (Jane Espenson, D. Brent Mote - 2009-2014), Abnormalitățile luând inspirație din "folclor, basme, cultura popular și altele.". Kim Ji-hoon a avut un interes în a juca un joc concentrat pe gestionarea tipurilor de monștrii întâlniți în aceste povești, însă nu a găsit unul, așa că a decis să realizeze chiar el unul.</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">Cu ajutorul unei campanii de strangere de fonduri de succes pe Tumblbug, care a demonstrat interesul public pentru joc, <a href="lobcorp.html">Lobotomy Corporation</a> a fost publicat de către proaspăt foundatul Project Moon în data de 18 Noiembrie 2016. Dezvoltarea începând cu 4 membrii, jocul fiind însă completat de către o echipă de 9 indivizi; jocul folosind, în mare măsură, muzică din domeniul public.</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">În timpul dezvoltării celui de al doilea joc al studioului, <a href="lor.html">Library of Ruina</a>, echipa a crescut la 20 de angajați, incluzând și 4 ilustratori. Jocul a fost o recreație a unui joc de roluri de masă, creat de către Kim Ji-hoon în timpul studenției pentru a se juca cu prietenii săi.</p>
-                    <p style="padding-top: 20px; font-size: 24px; text-align: left; line-height: 26px;">În August 2024, echipa Project Moon constă din 45 de dezvoltatori de jocuri și 7 angajați ai cafenelei <a href="">HamHamPangPang</a>.</p>
+                    <p class="art-text">Project Moon a fost fondat de către dezvoltatorul Kim Ji-hoon, care avea o puternică pasiune pentru jocuri video, anime și literatură. A licențiat în Ingineria Calculatoarelor în căutare unui job în industria jocurilor video, intrând într-un club de dezvoltare a jocurilor video la Universitatea Asia, în cadrul căruia i-a înâlnit pe ceilalți membrii fondatori ai Project Moon. În al patrulea an de facultate, Kim Ji-hoon și Lee YuMi, au început să lucreze la <a href="lobcorp.html">Lobotomy Corporation</a>. Jocul a fost inspirat de către creații precum Fundația SCP, Cabana din Pădure (Drew Goddard - 2012), Depozitul 13 (Jane Espenson, D. Brent Mote - 2009-2014), Abnormalitățile luând inspirație din "folclor, basme, cultura popular și altele.". Kim Ji-hoon a avut un interes în a juca un joc concentrat pe gestionarea tipurilor de monștrii întâlniți în aceste povești, însă nu a găsit unul, așa că a decis să realizeze chiar el unul.</p>
+                    <p class="art-text">Cu ajutorul unei campanii de strangere de fonduri de succes pe Tumblbug, care a demonstrat interesul public pentru joc, <a href="lobcorp.html">Lobotomy Corporation</a> a fost publicat de către proaspăt foundatul Project Moon în data de 18 Noiembrie 2016. Dezvoltarea începând cu 4 membrii, jocul fiind însă completat de către o echipă de 9 indivizi; jocul folosind, în mare măsură, muzică din domeniul public.</p>
+                    <p class="art-text">În timpul dezvoltării celui de al doilea joc al studioului, <a href="lor.html">Library of Ruina</a>, echipa a crescut la 20 de angajați, incluzând și 4 ilustratori. Jocul a fost o recreație a unui joc de roluri de masă, creat de către Kim Ji-hoon în timpul studenției pentru a se juca cu prietenii săi.</p>
+                    <p class="art-text">În August 2024, echipa Project Moon constă din 45 de dezvoltatori de jocuri și 7 angajați ai cafenelei <a href="">HamHamPangPang</a>.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Realizări</p>
                     <hr style="margin-top: 10px; color: #FFEF23;">
                     <p style="padding-top: 20px; padding-left: 30px; font-size: 32px; text-align: left;">Jocuri video:</p>
-                    <ul style="padding-top: 10px; font-size: 24px; text-align: left; line-height: 26px; padding-left: 65px;">
+                    <ul class="art-text" style="padding-top: 10px; padding-left: 65px;">
                         <li><a href="lobcorp.html">Lobotomy Corporation (2018)</a> - Gestionare, Horror</li>
                         <li><a href="lor.html">Library of Ruina (2021)</a> - Strategie pe ture, joc de cărți</li>
                         <li><a href="limbus.html">Limbus Company (2023)</a> - Strategie pe ture, Gacha</li>
                     </ul>
                     <p style="padding-top: 20px; padding-left: 30px; font-size: 32px; text-align: left;">Opere literare:</p>
-                    <ul style="padding-top: 10px; font-size: 24px; text-align: left; line-height: 26px; padding-left: 65px;">
+                    <ul class="art-text" style="padding-top: 10px; padding-left: 65px;">
                         <li><a href="distortdet.html">Distortion Detective (2/2/2020 - 7/27/2021)</a>: roman web concentrat pe doi detectivi, Moses și Ezra investigând Distorsiile din Oraș, luând timp concomitent cu Library of Ruina</li>
                         <li><a href="leviathan.html">Leviathan (1/20/2022 - 10/5/2022)</a>: bandă desentă web devenită roman web, concentrată pe povestea lui Vergilius și Biroului său precedând evenimentele din Limbus Company.</li>
                         <li><a href="wonderlab.html">Wonderlab (3/27/2020 - 4/9/2021)</a>: bandă desenată web bazată pe evenimentele ce iau loc intr-o altă ramură Lobotomy Corporation decât cea pe care era concentrat jocul original. Povestea evidenția evenimentele din viața de zi cu zi a angajaților din Lobotomy Corporation, înainte de, în timpul, și după incidentul Nopților Albe și al Zilelor Întunecate. Aceasta a fost dată înlăturată de pe platformele oficiale (fiind disponibilă până în data de 15 August 2024), iar povestea s-ar putea sau nu să fie considerată parte din canonul oficial la cererea artistului.</li>
                     </ul>
                     <p style="padding-top: 20px; padding-left: 30px; font-size: 32px; text-align: left;">Altele:</p>
-                    <ul style="padding-top: 10px; font-size: 24px; text-align: left; line-height: 26px; padding-left: 65px;">
+                    <ul class="art-text" style="padding-top: 10px; padding-left: 65px;">
                         <li>HamHamPangPang: este o cafenea/restaurant tematic deținut de către Project Moon, în Suwoon, Koreea de Sud. S-a deschis în data de 20 August 2020, fiind bazat pe restaurantul cu același nume prezent în jocurile Library of Ruina și Limbus Company. Restaurantul are tematici schimbtoare cu mâncare și produse bazate pe universul Project Moon.</li>
                     </ul>
                 </div>

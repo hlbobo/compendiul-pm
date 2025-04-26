@@ -31,7 +31,7 @@ html{
 body{
   min-height: 100vh;
   min-width: 100dvh;
-  background-image: url("Imagini/Restul site-ului/MISC/background.png");
+  background-image: url("Imagini/Restul site-ului/MISC/background.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,11 +43,13 @@ nav{
   height: 45px;
   background-color: var(--nav-clr);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.25);
+  z-index: 9998;
 }
 nav a{
   height: 100%;
@@ -64,16 +66,114 @@ nav svg{
   fill: var(--text-clr);
 }
 
+/*bara de căutare*/
+.search-section {
+  position: fixed;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 50%;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search-wrapper input {
+  display: block;
+  margin: 0 auto;
+  color: var(--accent-clr);
+  border: 2px solid var(--accent-clr);
+  background: linear-gradient(rgba(27, 26, 26, 0.8),rgba(46, 44, 43, 0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 50%;
+  z-index: 10000;
+}
+
+input {
+  font-size: 1rem;
+}
+
+/*rezultatele*/
+.user-cards {
+  display: grid;
+  position: fixed;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 300px;
+  overflow-y: scroll;
+  height: auto;
+  max-height: 70vh;
+  z-index: 9999;
+  
+  gap: 1rem;
+  background: linear-gradient(rgba(29, 27, 26,0.8),rgba(29, 27, 26,0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.user-cards.hidden {
+  display: none !important;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+}
+
+.card{
+  border: 2px solid var(--accent-clr);
+  border-radius: 10px;
+  background: linear-gradient(rgba(29, 27, 26,0.8),rgba(29, 27, 26,0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.card:hover{
+  background-color: var(--hover-clr);
+}
+
+.card > .article-name{
+  font-size: 20px;
+}
+
+.card:hover > .article-name{
+  color: var(--second-text-clr);
+}
+
+.card > .article-short{
+  font-size: 18px;
+  color:#a1a1a1
+}
+
 /*Partea dreaptă a bării de navigare*/
 .right-nav {
-  padding-left: 75.35%;
 	display: flex;
+  align-items: flex-end;
+  justify-content: center;
 	flex-flow: row nowrap;
 	width: 300px;
 	z-index: 9;
 }
 .right-nav {
-	justify-content: flex-end;
+  width: auto;
+  margin-left: auto;
 }
 
 /*Butoanele ptr link-urile ptr SNS*/
@@ -105,7 +205,7 @@ nav svg{
   top: 5px;
   height: 98.65%;
   left: -100%;
-  z-index: 10;
+  z-index: 100;
   width: 250px;
   padding: 0px 1em;
   overflow-y: scroll;
@@ -130,6 +230,7 @@ nav svg{
 
 /*Afișarea sidebar-ului*/
 #sidebar-active:checked ~ .links-container{
+  display: flex;
   left: 5px;
 }
 #sidebar-active:checked ~ #overlay{
@@ -138,7 +239,7 @@ nav svg{
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9;
+  z-index: 99;
 }
 
 /*Elimin stilul listelor*/
@@ -223,6 +324,7 @@ nav .submenu.show{
   display: flex;
   justify-content: flex-start;
   align-self: center;
+  z-index: 99;
 }
 
 /*Ajustări suplimentare buton închidere sidebar*/
@@ -230,6 +332,7 @@ nav .submenu.show{
   margin-left: 216px;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 101;
 }
 
 /*Ajustări suplimentare buton deschidere sidebar când mouse-ul se află pe el*/
@@ -268,6 +371,7 @@ nav .submenu.show{
 
 /*Padding în interiorul propriu-zis al site-ului*/
 main{
+  padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -301,11 +405,11 @@ p{
 }
 
 /*aspect și poziționare text cu imagini*/
-.imgtext{
+.art-text{
   padding-top: 20px;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 /*poziționare și aspect imagini din articole*/
@@ -404,6 +508,11 @@ details > summary:first-of-type {
   margin-top: 20px;
   padding: 0;
   border: solid 3px #FFEF23;
+  border-radius: 15px;
+}
+
+.cuprins th{
+  border-radius: 11px;
 }
 .cuprins tr td{
   padding-left: 6px;
@@ -415,6 +524,7 @@ details > summary:first-of-type {
   align-items: center;
   gap: 0 15px;
   padding: 15px;
+  z-index: 1;
 }
 
 .lore-buttons button{
@@ -438,3 +548,4 @@ details > summary:first-of-type {
   height: 260px;
   width: 160px;
 }
+

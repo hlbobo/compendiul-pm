@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Compendiul Project Moon</title>
-        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.png">
+        <link rel="icon" type="image/x-icon" href="Imagini/logos/Logopit_1735567043647.webp">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
     </head>
@@ -22,7 +22,7 @@
                 <ul class="menu">
                     <li>
                         <div class="logo-side-nav">
-                            <img src="Imagini/logos/Logopit_1735567043647.png" width="150px" height="150px">
+                            <img src="Imagini/logos/Logopit_1735567043647.webp" width="150px" height="150px">
                         </div>
                     </li>
                     <li>
@@ -68,7 +68,7 @@
                         <ul class="submenu">
                             <div>
                                 <li>
-                                    <a class="active" href="wonderlab.html">
+                                    <a href="wonderlab.html">
                                         <span>Wonderlab</span>
                                     </a>
                                 </li>
@@ -92,18 +92,38 @@
                     </li>
                 </ul>
                 </div>
-                <div class="right-nav">
-                    <ul class="socials">
-                        <li>
-                            <a href="https://x.com/ProjMoonStudio">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!--SOCIALS-->
+            <div class="right-nav">
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/ProjMoonStudio">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@ProjectMoonOfficial">YouTube</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <!--SEARCH BAR-->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="pageSearch" placeholder="Caută">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+        
+        <!--SEARCH RESULTS-->
+        <div class="results-container">
+            <div class="user-cards hidden"></div>
+        </div>
+        <template data-user-template>
+            <div class="card">
+                <div class="article-name"></div>
+                <div class="article-short"></div>
+            </div>
+        </template>
 
         <main>
             <div class="container">
@@ -112,42 +132,42 @@
                     <p class="subtitle" style="padding-top: 50px;">Date generale</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
                     <div id="imag1">
-                        <img src="Imagini/Restul site-ului/MISC/LobCorpIcon.png" width="180px" height="200px">
+                        <img src="Imagini/Restul site-ului/MISC/SIGLE/LCorp-Logo.webp" width="200px" height="200px">
                         <p style="text-align: center;">Sigla Corporației</p>
                     </div>
-                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; font-style: italic; line-height: 28px;"><span style="color: var(--second-text-clr);">"</span>FACE THE FEAR, BUILD THE FUTURE<span style="color: var(--second-text-clr);">"</span></p>
+                    <p class="art-text" style="font-style: italic;"><span style="color: var(--second-text-clr);">"</span>FACE THE FEAR, BUILD THE FUTURE<span style="color: var(--second-text-clr);">"</span></p>
                     <p id="imgtext" style="padding-top: 10px; margin-left: 100px; font-size: 28px; text-align: left; line-height: 28px;">- Sloganul Corporației</p>
-                    <p id="imgtext" style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Lobotomy Corporation (로보토미 코퍼레이션, Robotomi Kopeoreisyeon), sau Corporația L (L사, L Sa), a fost una dintre cele douăzeci și șase de <a href="aripi.html">Aripi</a> și deținătoarea Cuibului Districtului 12 înainte de prăbușirea sa. <a href="singularitati.html">Singularitatea</a> Corporației L era abilitatea de a materializa mintea umană, numită Cogito, iar compania s-a folosit de aceasta pentru a se promova drept un producător de energie ecologic pentru <a href="orasul.html">Oraș</a> și celelalte <a href="aripi.html">Aripi</a>. În secret, această energie era generată prin crearea și utilizarea <a href="abnos.html">Abnormităților</a> – entități monstruoase și extrem de periculoase, rezultate din experimentele realizate cu <a href="singularitati.html">Singularitatea</a> Corporației L.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Jocul prequel <a href="lobcorp.html">Lobotomy Corporation</a> are loc în întregime în cadrul facilității principale a Corporației L, în timpul colectării Luminii.</p>
+                    <p class="art-text">Lobotomy Corporation (로보토미 코퍼레이션, Robotomi Kopeoreisyeon), sau Corporația L (L사, L Sa), a fost una dintre cele douăzeci și șase de <a href="aripi.html">Aripi</a> și deținătoarea Cuibului Districtului 12 înainte de prăbușirea sa. <a href="singularitati.html">Singularitatea</a> Corporației L era abilitatea de a materializa mintea umană, numită Cogito, iar compania s-a folosit de aceasta pentru a se promova drept un producător de energie ecologic pentru <a href="orasul.html">Oraș</a> și celelalte <a href="aripi.html">Aripi</a>. În secret, această energie era generată prin crearea și utilizarea <a href="abnos.html">Abnormităților</a> – entități monstruoase și extrem de periculoase, rezultate din experimentele realizate cu <a href="singularitati.html">Singularitatea</a> Corporației L.</p>
+                    <p class="art-text">Jocul prequel <a href="lobcorp.html">Lobotomy Corporation</a> are loc în întregime în cadrul facilității principale a Corporației L, în timpul colectării Luminii.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Descriere</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Ca <a href="aripi.html">Aripă</a>, Corporația L opera ca producător și furnizor de energie, intrând în relații comerciale reciproce cu mai multe alte <a href="aripi.html">Aripi</a>, inclusiv Corporația W, Corporația R și Corporația T. Deși Corporația L aducea beneficii fiecărei <a href="aripi.html">Aripi</a> partenere, acestea o ajutau, la rândul lor, fără să știe că facilitează punerea în aplicare a planului său. De exemplu, Corporația T i-a oferit acces la Protocolul TT2, utilizat pentru a modifica și repeta scara temporală a facilității principale a Corporației L, în timp ce Echipa Iepure a Corporației R a fost contractată pentru a asigura securitatea facilității.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Corporația L a fost produsul unui plan radical menit să schimbe fundamental mentalitatea locuitorilor <a href="orasul.html">Orașului</a>, pus în aplicare de membrii săi fondatori în cadrul facilității principale. Planul presupunea colectarea Luminii și eliberarea Seminței Luminii asupra <a href="orasul.html">Orașului</a>, permițând astfel fiecărui individ să-și accepte emoțiile și, ulterior, să-și manifeste <a href="ego.html">E.G.O.</a>. Succesul colectării și eliberării Luminii a dus la evenimentul cunoscut drept <a href="zile-nopti.html">Nopțile Albe și Zilele Întunecate</a>, ceea ce a provocat prăbușirea Aripii și a filialelor sale.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">Cu toate acestea, eliberarea Luminii a fost întreruptă de Angela, care căuta răzbunare pentru suferința provocată de acest plan și, totodată, libertate față de Corporația L. Acțiunile sale au cauzat indirect fenomenul <a href="distorsiuni.html">Distorsiunii</a>. Angela a transformat ulterior sediul principal al Corporației L în <a href="biblioteca.html">Biblioteca</a>, unde și-a petrecut timpul planificându-și libertatea, în timp ce numeroasele facțiuni ale <a href="orasul.html">Orașului</a> începeau să vizeze vidul de putere creat în fostul <a href="cuiburi.html">Cuib</a> al Corporației L, fiecare dorind să profite de situație.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; line-height: 28px;">În paralel cu prăbușirea Corporației L, Crengile de Aur au început să se materializeze în rămășițele filialelor distruse, devenind un obiect de dorință pentru mulți care cunoșteau existența lor – inclusiv pentru <a href="lcbc.html">Limbus Company</a>.</p>
+                    <p class="art-text">Ca <a href="aripi.html">Aripă</a>, Corporația L opera ca producător și furnizor de energie, intrând în relații comerciale reciproce cu mai multe alte <a href="aripi.html">Aripi</a>, inclusiv Corporația W, Corporația R și Corporația T. Deși Corporația L aducea beneficii fiecărei <a href="aripi.html">Aripi</a> partenere, acestea o ajutau, la rândul lor, fără să știe că facilitează punerea în aplicare a planului său. De exemplu, Corporația T i-a oferit acces la Protocolul TT2, utilizat pentru a modifica și repeta scara temporală a facilității principale a Corporației L, în timp ce Echipa Iepure a Corporației R a fost contractată pentru a asigura securitatea facilității.</p>
+                    <p class="art-text">Corporația L a fost produsul unui plan radical menit să schimbe fundamental mentalitatea locuitorilor <a href="orasul.html">Orașului</a>, pus în aplicare de membrii săi fondatori în cadrul facilității principale. Planul presupunea colectarea Luminii și eliberarea Seminței Luminii asupra <a href="orasul.html">Orașului</a>, permițând astfel fiecărui individ să-și accepte emoțiile și, ulterior, să-și manifeste <a href="ego.html">E.G.O.</a>. Succesul colectării și eliberării Luminii a dus la evenimentul cunoscut drept <a href="zile-nopti.html">Nopțile Albe și Zilele Întunecate</a>, ceea ce a provocat prăbușirea Aripii și a filialelor sale.</p>
+                    <p class="art-text">Cu toate acestea, eliberarea Luminii a fost întreruptă de Angela, care căuta răzbunare pentru suferința provocată de acest plan și, totodată, libertate față de Corporația L. Acțiunile sale au cauzat indirect fenomenul <a href="distorsiuni.html">Distorsiunii</a>. Angela a transformat ulterior sediul principal al Corporației L în <a href="biblioteca.html">Biblioteca</a>, unde și-a petrecut timpul planificându-și libertatea, în timp ce numeroasele facțiuni ale <a href="orasul.html">Orașului</a> începeau să vizeze vidul de putere creat în fostul <a href="cuiburi.html">Cuib</a> al Corporației L, fiecare dorind să profite de situație.</p>
+                    <p class="art-text">În paralel cu prăbușirea Corporației L, Crengile de Aur au început să se materializeze în rămășițele filialelor distruse, devenind un obiect de dorință pentru mulți care cunoșteau existența lor – inclusiv pentru <a href="lcbc.html">Limbus Company</a>.</p>
                 </div>
                 <div class="info">
                     <p class="subtitle">Filiale cunoscute</p>
                     <hr style="margin-top: 10px; color: var(--accent-clr);">
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala X-394</p>
-                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Facilitatea principală a Corporației L, deși inițial îngropată sub pământ, la un moment dat a ieșit la suprafață și a cauzat incidentul <a href="zile-nopti.html">Nopților Albe și al Zilelor Întunecate</a>. În cele din urmă, a fost transformată în <a href="biblioteca.html">Bibliotecă</a> de către Angela.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala D-02</p>
-                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Situată undeva sub mahalalele Districtului 12, degenerând într-un loc plin de cadavre și insecte.</p>
-                    <p style="padding-top: 20px; padding-left: 15px; font-size: 26px; text-align: left; line-height: 28px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Gregor. Păcătoșii nu au reușit să recupereze Crenguța de Aur de la această locație din cauza intervenției lui Hermann, Gubo și Jia Huan, care au survolat zona și au furat-o după moartea lui Yuri.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala J-03</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Situată sub un mare cazinou din <a href="mahalale.html">mahalalele</a> Districtului 10, aceasta este o peșteră uriașă aflată în proces de transformare într-o extensie destinată depozitării seifurilor.</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Rodion. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Sonya le-a permis să o ia.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala K-02</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Situată sub conacul familiei Sinclair din orașul Calw, din Cuibul Districtului 11, fiind transformată într-o cameră pentru torturarea celor pe care Inchiziția Corporației N îi consideră eretici.</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Creanga de Aur a filialei abandonate a rezonat cu Sinclair și Kromer. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Demian a ucis-o pe Kromer pentru ei și, ulterior, le-a permis să o ia.</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala Lobotomy Corporation controlată de Alianța pentru Eliberarea de Tehnologie</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">O filială a Corporației L, anterior controlată de Corporației K, unde Dongrang și-a desfășurat cercetările înainte de a fi atacată și preluată de Alianța pentru Eliberarea de Tehnologie. <a href="abnos.html">Abnormitățile</a> din această filială au fost, cumva, păstrate inactive, iar alianța a reușit să extragă <a href="ego.html">E.G.O.-uri</a> din acestea. Creanga de Aur a acestei filiale a fost luată de Dongbaek, care, la sosirea Păcătoșilor, a fugit și a atacat filiala Corporației K unde se află Dongrang.</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Creanga de Aur a rezonat cu Yi Sang, Dongrang, Dongbaek și Chestiei ce Plânge. Păcătoșii au reușit să recupereze Creanga de Aur după ce l-au învins pe Dongrang (atât ca <a href="distorsiuni.html">Distorsiune</a>, cât și ca mânuitor de <a href="ego.html">E.G.O.</a>).</p>
-                    <p style="padding-top: 20px; font-size: 28px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Nava de foraj a Corporației L</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Vizual asemănătoare unei platforme petroliere, această filială este situată în Marile Lacuri din Districtul Corporației U. Înainte de atacul Balenei Palide, nava conținea o Creangă de Aur împreună cu un număr de <a href="abnos.html">abnormități</a>. Ambele au fost ingerate de către Balena Palidă, care a părăsit ulterior filiala (împreună cu locuitorii săi, inclusiv echipa LCCB) în stare de pallidificare.</p>
-                    <p style="padding-top: 20px; font-size: 26px; padding-left: 15px; text-align: left; line-height: 28px;">Creanga de Aur nu poate rezona, deoarece se afla în interiorul inimii Balenei Palide. În schimb, Dante experimentează amintirile lui Ishmael pe parcursul Canto-ului. După ce au aflat locația Crengii în timpul întâlnirii cu Rim la bordul navei de foraj, Păcătoșii au recuperat-o din interiorul balenei după ce au învins-o pe Ahab, care manifestase <a href="ego.html">E.G.O.</a>.</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala X-394</p>
+                    <p class="art-text" style="padding-left: 15px;">Facilitatea principală a Corporației L, deși inițial îngropată sub pământ, la un moment dat a ieșit la suprafață și a cauzat incidentul <a href="zile-nopti.html">Nopților Albe și al Zilelor Întunecate</a>. În cele din urmă, a fost transformată în <a href="biblioteca.html">Bibliotecă</a> de către Angela.</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala D-02</p>
+                    <p class="art-text" style="padding-left: 15px;">Situată undeva sub mahalalele Districtului 12, degenerând într-un loc plin de cadavre și insecte.</p>
+                    <p class="art-text" style="padding-left: 15px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Gregor. Păcătoșii nu au reușit să recupereze Crenguța de Aur de la această locație din cauza intervenției lui Hermann, Gubo și Jia Huan, care au survolat zona și au furat-o după moartea lui Yuri.</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala J-03</p>
+                    <p class="art-text" style="padding-left: 15px;">Situată sub un mare cazinou din <a href="mahalale.html">mahalalele</a> Districtului 10, aceasta este o peșteră uriașă aflată în proces de transformare într-o extensie destinată depozitării seifurilor.</p>
+                    <p class="art-text" style="padding-left: 15px;">Filiala abandonată a Corporației L, a cărei Creangă de Aur a rezonat cu Rodion. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Sonya le-a permis să o ia.</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala K-02</p>
+                    <p class="art-text" style="padding-left: 15px;">Situată sub conacul familiei Sinclair din orașul Calw, din Cuibul Districtului 11, fiind transformată într-o cameră pentru torturarea celor pe care Inchiziția Corporației N îi consideră eretici.</p>
+                    <p class="art-text" style="padding-left: 15px;">Creanga de Aur a filialei abandonate a rezonat cu Sinclair și Kromer. Păcătoșii au reușit să recupereze Creanga de Aur de la această locație, dar numai pentru că Demian a ucis-o pe Kromer pentru ei și, ulterior, le-a permis să o ia.</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Filiala Lobotomy Corporation controlată de Alianța pentru Eliberarea de Tehnologie</p>
+                    <p class="art-text" style="padding-left: 15px;">O filială a Corporației L, anterior controlată de Corporației K, unde Dongrang și-a desfășurat cercetările înainte de a fi atacată și preluată de Alianța pentru Eliberarea de Tehnologie. <a href="abnos.html">Abnormitățile</a> din această filială au fost, cumva, păstrate inactive, iar alianța a reușit să extragă <a href="ego.html">E.G.O.-uri</a> din acestea. Creanga de Aur a acestei filiale a fost luată de Dongbaek, care, la sosirea Păcătoșilor, a fugit și a atacat filiala Corporației K unde se află Dongrang.</p>
+                    <p class="art-text" style="padding-left: 15px;">Creanga de Aur a rezonat cu Yi Sang, Dongrang, Dongbaek și Chestiei ce Plânge. Păcătoșii au reușit să recupereze Creanga de Aur după ce l-au învins pe Dongrang (atât ca <a href="distorsiuni.html">Distorsiune</a>, cât și ca mânuitor de <a href="ego.html">E.G.O.</a>).</p>
+                    <p style="padding-top: 20px; font-size: 32px; text-align: left; text-decoration: underline var(--second-text-clr); line-height: 28px;">Nava de foraj a Corporației L</p>
+                    <p class="art-text" style="padding-left: 15px;">Vizual asemănătoare unei platforme petroliere, această filială este situată în Marile Lacuri din Districtul Corporației U. Înainte de atacul Balenei Palide, nava conținea o Creangă de Aur împreună cu un număr de <a href="abnos.html">abnormități</a>. Ambele au fost ingerate de către Balena Palidă, care a părăsit ulterior filiala (împreună cu locuitorii săi, inclusiv echipa LCCB) în stare de pallidificare.</p>
+                    <p class="art-text" style="padding-left: 15px;">Creanga de Aur nu poate rezona, deoarece se afla în interiorul inimii Balenei Palide. În schimb, Dante experimentează amintirile lui Ishmael pe parcursul Canto-ului. După ce au aflat locația Crengii în timpul întâlnirii cu Rim la bordul navei de foraj, Păcătoșii au recuperat-o din interiorul balenei după ce au învins-o pe Ahab, care manifestase <a href="ego.html">E.G.O.</a>.</p>
                 </div>
             </div>
         </main>
