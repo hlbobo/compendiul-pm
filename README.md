@@ -1,5 +1,6 @@
 # 🌙 Compendiul Project Moon
-<img src="Imagini/logos/Logopit_1735567043647.webp" width="200"/>
+<img src="Imagini/logos/Logopit_1735567043647.webp" width="300"/>
+
 **Compendiul Project Moon** este un proiect independent, dedicat colectării, traducerii și prezentării într-un mod accesibil în limba română a informațiilor despre jocurile, cărțile și universul narativ creat de studioul sud-coreean Project Moon.
 
 
