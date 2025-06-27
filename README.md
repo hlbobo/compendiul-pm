@@ -58,7 +58,7 @@
 
 ## ⚠️ Notă
 
-Acest proiect este **neoficial** și **nesusținut oficial** de către Project Moon. Actualizările pot apărea cu întârziere din cauza resurselor limitate și a statutului de elev al autorului.
+Acest proiect este **neoficial** și **nesusținut oficial** de către Project Moon. Actualizările pot apărea cu întârziere din cauza resurselor limitate.
 
 ## 📈 Statistici site
 
