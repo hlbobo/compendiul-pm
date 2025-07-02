@@ -25,10 +25,14 @@
 html{
   font-family: 'Bebas-kai', 'Segoe UI', Verdana, Geneva;
   line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 /*Setez dimensiunile minime de funcționare ale site-ului și culorile ptr fundal și text*/
 body{
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   min-width: 100dvh;
   background-image: url("Imagini/Restul site-ului/MISC/background.webp");
@@ -36,6 +40,20 @@ body{
   background-attachment: fixed;
   background-size: cover;
   color: var(--text-clr);
+}
+
+footer{
+  margin:0;
+  padding:10px;
+  width: 100%;
+  background-color: var(--nav-clr);
+}
+
+.foot-text{
+  padding-left: 10px;
+  font-size: 18;
+  color: #ccc;
+  text-align: left;
 }
 
 /*Bara de navigare*/
@@ -391,7 +409,7 @@ p{
 
 /*aspect și poziționare titlu*/
 .title{
-  color: #FFEF23;
+  color: var(--accent-clr);
   font-size: 66px;
   text-align: center;
   padding-top: 40px;
@@ -399,7 +417,7 @@ p{
 
 /*aspect și poziționare subtitlu*/
 .subtitle{
-  color: #FFEF23;
+  color: var(--accent-clr);
   font-size: 40px;
   text-align: left;
 }
@@ -440,11 +458,11 @@ p{
 }
 
 /*aspect link-uri - paragraf*/
-.info p a:visited, .info p a:link, .info p a:active{
+.info p a:visited, .info p a:link, .info p a:active, .info ul li a:visited, .info ul li a:link, .info ul li a:active, .lore-buttons .button-grow a:visited, .lore-buttons .button-grow a:link, .lore-buttons .button-grow a:active, footer a:active, footer a:visited, footer a:link{
   color:#ffbd23;
   text-decoration: none;
 }
-.info p a:hover{
+.info p a:hover, .info ul li a:hover, footer a:hover{
   text-decoration: underline;
 }
 
@@ -454,16 +472,6 @@ table a:visited,table a:link,table a:active{
   text-decoration: none;
 }
 table a:hover{
-  text-decoration: underline;
-}
-
-/*aspect link-uri - lista*/
-.info ul li a:visited, .info ul li a:link, .info ul li a:active, .lore-buttons .button-grow a:visited, 
-.lore-buttons .button-grow a:link, .lore-buttons .button-grow a:active{
-  color:#ffbd23;
-  text-decoration: none;
-}
-.info ul li a:hover{
   text-decoration: underline;
 }
 
@@ -507,7 +515,7 @@ details > summary:first-of-type {
 .cuprins, .cuprins th{
   margin-top: 20px;
   padding: 0;
-  border: solid 3px #FFEF23;
+  border: solid 3px var(--accent-clr);
   border-radius: 15px;
 }
 
@@ -548,4 +556,3 @@ details > summary:first-of-type {
   height: 260px;
   width: 160px;
 }
-
